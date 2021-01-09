@@ -1,0 +1,101 @@
+// Rich Text Editor (RTE)
+// =======
+.bold-500 {
+	font:{
+		weight: 500 !important;
+	};
+}
+
+.bold-700 {
+	font:{
+		weight: 700 !important;
+	};
+}
+
+.lh-1{ line-height: 1; }
+.lh-0{ line-height: 0; }
+
+
+.underline{ text-decoration: underline; }
+.uppercase {text-transform: uppercase;}
+.capitalize {text-transform: capitalize;}
+.rte{
+	counter-reset: ol-counter;
+
+	em{
+		font:{
+			style:italic;
+		}
+	}
+	
+	p{
+		padding:{
+			bottom: $rte-spacing;
+		}
+
+		&:last-child{
+			padding:{
+				bottom: 0;
+			}
+		}
+	}
+
+	strong {
+		font:{
+			weight: 700;
+		};
+	}
+
+	ul{
+		list-style-type: none;
+		padding:{
+			bottom: $rte-spacing;
+		}
+
+		li {
+			position: relative;
+			margin:{
+				bottom: rem(5);
+			}
+			padding:{
+				left: rem(15);
+			}
+			&:before {
+				content: "";
+				display: inline-block;
+				width: rem(5);
+				height: rem(5);
+				border-radius: 50%;
+				position: absolute;
+				top: rem(7);
+				left: 0;
+				background-color: #000;
+			}
+		}
+	}
+
+	ol{
+		list-style-type: none;
+		padding:{
+			bottom: $rte-spacing;
+		}
+
+		li {
+			position: relative;
+			margin:{
+				bottom: rem(5);
+			}
+			padding:{
+				left: rem(15);
+			}
+			&:before {
+				counter-increment: ol-counter;
+				content: counter(ol-counter) ". ";
+				position: absolute;
+				top: 0;
+				left: 0;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,34 @@
+// Grid Containers
+$middle-container: 500px;
+$tablet-container: 768px;
+$desktop-container: 1024px;
+$max-container: 1200px;
+$hd-container: 1400px;
+$hhd-container:	1800px;
+
+$max-width: $max-container;
+
+// Responsive Breakpoints
+$middle-breakpoint:  ($middle-container);
+$tablet-breakpoint:  ($tablet-container);
+$desktop-breakpoint: ($desktop-container);
+$max-breakpoint: ($max-container);
+$hd-breakpoint: ($hd-container);
+$hhd-breakpoint: ($hhd-container);
+
+$screen-sizes: (
+	tiny: em(0),
+	middle: $middle-container,
+	tablet: $tablet-container,
+	desktop: $desktop-container,
+	max: $max-container,
+	hd: $hd-container,
+	hhd: $hhd-container
+	);
+
+.middle-container{width:$middle-container;}
+.tablet-container{width:$tablet-container;}
+.desktop-container{width:$desktop-container;}
+.max-container{width:$max-container;}
+.hd-container{width:$hd-container;}
+.hhd-container{width:$hhd-container;}

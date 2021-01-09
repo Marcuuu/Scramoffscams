@@ -1,0 +1,12 @@
+/* This defines the minimum, maximum and step for margins / padding */
+/* PLEASE UPDATE style-guide/margins.php IF YOU CHANGE THE VALUES HERE */
+$margin_max:200;
+$margin_step:5;
+$margin_min:0;
+$margins: ();
+@while $margin_max >= $margin_min {
+	$margins : join($margins,$margin_max);
+	$margin_max: $margin_max - $margin_step;
+}
+
+$rte-spacing: rem(15);
