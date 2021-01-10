@@ -3232,6 +3232,14 @@ b,
   font-style: italic;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
+svg {
+  display: block;
+}
+
 .header-font {
   font-family: "Montserrat", sans-serif;
 }
@@ -3250,6 +3258,18 @@ b,
 
 .background-blue {
   background-color: #003049;
+}
+
+.background-lightblue {
+  background-color: #8BD3E3;
+}
+
+.background-red {
+  background-color: #E46E63;
+}
+
+.background-orange {
+  background-color: #F78002;
 }
 
 .color-white {
@@ -3412,6 +3432,66 @@ header .social-nav-ul svg {
 }
 .index-who .text-con {
   display: inline-block;
+}
+
+.index-what .text-con .inner {
+  max-width: 350px;
+  max-width: 21.875rem;
+  margin-left: auto;
+}
+.index-what .image-con img {
+  max-width: 350px;
+  max-width: 21.875rem;
+}
+
+.index-team .index-team-ul .each:before {
+  content: "";
+  display: inline-block;
+  width: calc(100% - 40px);
+  height: 100%;
+  border: 5px solid #003049;
+  border: 0.3125rem solid #003049;
+  border-radius: 20px;
+  border-radius: 1.25rem;
+  position: absolute;
+  top: 10px;
+  top: 0.625rem;
+  left: 30px;
+  left: 1.875rem;
+  z-index: 1;
+}
+.index-team .index-team-ul .each:first-child, .index-team .index-team-ul .each:last-child {
+  margin-top: -80px;
+  margin-top: -5rem;
+}
+.index-team .index-team-ul .each .inner {
+  position: relative;
+  padding: 30px;
+  padding: 1.875rem;
+  border: 5px solid #003049;
+  border: 0.3125rem solid #003049;
+  border-radius: 20px;
+  border-radius: 1.25rem;
+  z-index: 2;
+}
+.index-team .index-team-ul .each .image-con {
+  border: 5px solid #003049;
+  border: 0.3125rem solid #003049;
+  border-top-left-radius: 200px;
+  border-top-left-radius: 12.5rem;
+  border-top-right-radius: 200px;
+  border-top-right-radius: 12.5rem;
+  overflow: hidden;
+}
+
+.index-social .index-social-ul .svg-con svg {
+  width: 24px;
+  width: 1.5rem;
+  height: 24px;
+  height: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  fill: #003049;
 }
 
 a {

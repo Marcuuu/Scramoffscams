@@ -17,6 +17,13 @@ b,
     }
 }
 
+.underline {
+    text-decoration: underline;
+}
+
+svg {
+    display: block;
+}
 
 .header-font {
     font-family: 'Montserrat', sans-serif;
@@ -36,6 +43,18 @@ b,
 
 .background-blue {
     background-color: #003049;
+}
+
+.background-lightblue {
+    background-color: #8BD3E3;
+}
+
+.background-red {
+    background-color: #E46E63;
+}
+
+.background-orange {
+    background-color: #F78002;
 }
 
 .color-white {
@@ -191,5 +210,75 @@ header {
     }
     .text-con {
         display: inline-block;
+    }
+}
+
+.index-what {
+    .text-con {
+        .inner {
+            max-width: rem(350);
+            margin:{
+                left: auto;
+            }
+        }
+    }
+    .image-con {
+        img {
+            max-width: rem(350);
+        }
+    }
+}
+
+.index-team {
+    .index-team-ul {
+        .each {
+            &:before {
+                content: '';
+                display: inline-block;
+                width: calc(100% - 40px);
+                height: 100%;
+                border: rem(5) solid #003049;
+                border-radius: rem(20);
+                position: absolute;
+                top: rem(10);
+                left: rem(30);
+                z-index: 1;
+            }
+            &:first-child,
+            &:last-child {
+                margin:{
+                    top: rem(-80);
+                }
+            }
+            .inner {
+                position: relative;
+                padding: rem(30);
+                border: rem(5) solid #003049;
+                border-radius: rem(20);
+                z-index: 2;
+            }
+            .image-con {
+                border: rem(5) solid #003049;
+                border-top-left-radius: rem(200);
+                border-top-right-radius: rem(200);
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+.index-social {
+    .index-social-ul {
+        .svg-con {
+            svg {
+                width: rem(24);
+                height: rem(24);
+                margin:{
+                    left: auto;
+                    right: auto;
+                }
+                fill: #003049;
+            }
+        }
     }
 }
