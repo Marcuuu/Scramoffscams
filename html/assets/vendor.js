@@ -54,7 +54,24 @@ return formatString.replace(placeholderRegex,value)}
  		}
  	});
  }
+
+ function checkAdmin() {
+     let admin = $.cookie('admin')
+     let query = window.location.search
+     query = query.split('=')
+     if (query[1] == 'test') {
+         $.cookie('admin', 'expires_seven_days')
+     }
+     else {
+         if (admin === null || admin === undefined) {
+            window.location = '/404.html'
+         }
+     }
+     console.log(admin)
+ }
+
  $(function(){
+     checkAdmin()
  	$(".global-select-div select").on("change",function(){
  		var elem = $(this);
  		elem.prev().html(elem.find("option:selected").text());
