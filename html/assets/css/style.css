@@ -3127,6 +3127,14 @@ img, video, audio, table, embed, applet {
   font-weight: 700 !important;
 }
 
+.bold-800 {
+  font-weight: 800 !important;
+}
+
+.bold-900 {
+  font-weight: 900 !important;
+}
+
 .lh-1 {
   line-height: 1;
 }
