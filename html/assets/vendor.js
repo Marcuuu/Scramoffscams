@@ -64,9 +64,12 @@ return formatString.replace(placeholderRegex,value)}
      }
      else {
          if (admin === null || admin === undefined) {
-            window.location = '/coming-soon'
+             if (!window.location.pathname.includes("coming-soon")) {
+    window.location = '/coming-soon'
+             }
          }
-     }
+     }                  
+     console.log(window.location)
      console.log(admin)
  }
 
