@@ -64,14 +64,14 @@ return formatString.replace(placeholderRegex,value)}
      }
      else {
          if (admin === null || admin === undefined) {
-            window.location = '/coming-soon.html'
+            window.location = '/coming-soon'
          }
      }
      console.log(admin)
  }
 
  $(function(){
-    //  checkAdmin()
+     checkAdmin()
  	$(".global-select-div select").on("change",function(){
  		var elem = $(this);
  		elem.prev().html(elem.find("option:selected").text());
