@@ -64,7 +64,7 @@ return formatString.replace(placeholderRegex,value)}
      }
      else {
          if (admin === null || admin === undefined) {
-            window.location = '/404.html'
+            window.location = '/coming-soon.html'
          }
      }
      console.log(admin)

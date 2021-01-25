@@ -99,6 +99,15 @@ svg {
     line-height: 1;
 }
 
+.body-2 {
+    font:{
+        family: 'Nunito Sans', sans-serif;
+        size: rem(18);
+        weight: 400;
+    }
+    line-height: 1.4;
+}
+
 .body-3 {
     font:{
         family: 'Nunito Sans', sans-serif;
@@ -125,6 +134,10 @@ svg {
     border: rem(3) solid #003049;
     border-radius: rem(200);
     padding: rem(10) rem(35);
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        background-color: #EAB141;
+    }
 }
 
 .button-2 {
@@ -147,6 +160,12 @@ svg {
     padding: rem(10) rem(20);
     border: rem(3) solid;
     border-radius: rem(200);
+}
+
+svg {
+    text {
+        pointer-events: none;
+    }
 }
 
 header {
@@ -332,10 +351,22 @@ header {
                 transition: all 0.15s ease-in-out;
                 border-radius: rem(20);
                 padding: rem(30);
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 &.active {
                     opacity: 1;
                 }
             }
+        }
+    }
+}
+
+.index-partners {
+    .sponsored-ul {
+        img {
+            max-height: rem(80);
+            object-fit: contain;
         }
     }
 }
@@ -436,4 +467,12 @@ header {
         text-transform: uppercase;
         z-index: 10;
     }
+}
+
+.coming-soon-con {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFBF5;
+    height: 100vh;
 }

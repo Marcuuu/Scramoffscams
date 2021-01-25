@@ -3123,6 +3123,10 @@ img, video, audio, table, embed, applet {
   font-weight: 500 !important;
 }
 
+.bold-600 {
+  font-weight: 600 !important;
+}
+
 .bold-700 {
   font-weight: 700 !important;
 }
@@ -3322,6 +3326,14 @@ svg {
   line-height: 1;
 }
 
+.body-2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
 .body-3 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
@@ -3347,6 +3359,10 @@ svg {
   border-radius: 12.5rem;
   padding: 10px 35px;
   padding: 0.625rem 2.1875rem;
+  transition: all 0.15s ease-in-out;
+}
+.button-1:hover {
+  background-color: #EAB141;
 }
 
 .button-2 {
@@ -3371,6 +3387,10 @@ svg {
   border: 0.1875rem solid;
   border-radius: 200px;
   border-radius: 12.5rem;
+}
+
+svg text {
+  pointer-events: none;
 }
 
 header {
@@ -3576,9 +3596,21 @@ header .social-nav-ul svg {
   border-radius: 1.25rem;
   padding: 30px;
   padding: 1.875rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 .index-team .index-team-ul .each .description.active {
   opacity: 1;
+}
+
+.index-partners .sponsored-ul img {
+  max-height: 80px;
+  max-height: 5rem;
+  object-fit: contain;
 }
 
 .index-social .index-social-ul .svg-con svg {
@@ -3677,6 +3709,17 @@ header .social-nav-ul svg {
   background-color: #FDC04A;
   text-transform: uppercase;
   z-index: 10;
+}
+
+.coming-soon-con {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #FFFBF5;
+  height: 100vh;
 }
 
 a {
