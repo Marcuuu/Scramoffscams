@@ -549,13 +549,20 @@ header {
     .right-con {
         display: flex;
         align-items: flex-end;
+        video {
+            width: rem(500);
+            margin:{
+                left: auto;
+                right: auto;
+            }
+        }
     }
     .response-con {
         position: absolute;
-        bottom: rem(30);
+        bottom: rem(33);
         left: 50%;
         transform: translateX(-50%);
-        width: 74%;
+        width: 70%;
         input {
             width: 100%;
             padding: rem(20);
@@ -584,6 +591,37 @@ header {
                 height: rem(13);
             }
         }
+    }
+}
+
+///////////////
+//THIRD STAGE//
+//////////////
+
+.third-stage-con {
+    .left-bg {
+        background-color: #FFF9F0;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        width: 50%;
+        height: 100vh;
+        z-index: 1;
+    }
+    .right-bg {
+        background-color: #003049;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 50%;
+        height: 100vh;
+        z-index: 1;
+    }
+    .inner {
+        position: relative;
+        z-index: 2;
     }
 }
 

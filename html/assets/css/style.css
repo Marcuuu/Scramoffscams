@@ -3792,14 +3792,20 @@ header .social-nav-ul svg {
   -ms-flex-align: end;
   align-items: flex-end;
 }
+.second-stage-con .right-con video {
+  width: 500px;
+  width: 31.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 .second-stage-con .response-con {
   position: absolute;
-  bottom: 30px;
-  bottom: 1.875rem;
+  bottom: 33px;
+  bottom: 2.0625rem;
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 74%;
+  width: 70%;
 }
 .second-stage-con .response-con input {
   width: 100%;
@@ -3839,6 +3845,33 @@ header .social-nav-ul svg {
   width: 0.8125rem;
   height: 13px;
   height: 0.8125rem;
+}
+
+.third-stage-con .left-bg {
+  background-color: #FFF9F0;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+  height: 100vh;
+  z-index: 1;
+}
+.third-stage-con .right-bg {
+  background-color: #003049;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 50%;
+  height: 100vh;
+  z-index: 1;
+}
+.third-stage-con .inner {
+  position: relative;
+  z-index: 2;
 }
 
 .coming-soon-con {

@@ -65,82 +65,43 @@
         </div>
     </header>
 
-    <section class="second-stage-con main-section background-yellow">
+    <section class="third-stage-con main-section relative">
+        <div class="left-bg"></div>
+        <div class="right-bg"></div>
         <div class="container inner">
-            <div class="cf" style="width:100%;">
-                <div class="left-con col-6">
-                    <div class="header-con max-400-no-auto">
-                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20">Stage #2</h3>
-                        <p class="body-2 color-blue">Read the text conversation on the right and respond in your own words!</p>
+            <div class="cf">
+                <div class="left-con background-yellow col-4">
+                    <div class="header-con">
+                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20">Stage #3</h3>
+                        <p class="body-2 color-blue">Look at the following pictures and try to suss out the fake account by clicking on it!</p>
                     </div>
                 </div>
-                <div class="right-con relative col-6">
-                    <video autoplay="" muted="" playsinline preload="metadata">
-                        <source src="./assets/stage2-vid.mp4" type="video/mp4">
-                    </video>
-                    <div class="response-con">
-                        <form action="#">
-                            <input name="" id="" cols="30" rows="10" placeholder="Message" class="body-3 color-blue"></input>
-                            <button type="submit" class="continue-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="5.784" height="9.569" viewBox="0 0 5.784 9.569">
-                                    <path id="Path_131" data-name="Path 131" d="M342.637,1333.109l3.37,3.37-3.37,3.37"
-                                    transform="translate(-341.222 -1331.695)" fill="none" stroke="#fff"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
-                                </svg>
-                            </button>
-                        </form>
+                <div class="right-con background-blue col-8">
+                    <div class="header-con">
+                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20">Stage #3</h3>
+                        <p class="body-2 color-blue">Look at the following pictures and try to suss out the fake account by clicking on it!
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="global-complete-con text-center mfp-hide" id="complete-con">
-        <h2 class="header-2 color-blue bold uppercase mb-20">Congratulations, stage #2 is done!</h2>
-        <p class="body-2 color-blue mb-20">You were interacting with a potential scammer who used a spoofed account! Impersonators may come in various forms and are ever evolving so always verify if the account is legitimate with the real person.</p>
-        <p class="body-2 color-blue mb-20">This is your word: <span class="global-complete-word">We</span></p>
-        <a href="stage3.html" class="button-1 body-1 color-blue bold-800">Keep going!</a>
-    </div>
+    <script>
+        function topMargin() {
+            let headerHeight = $("header").outerHeight()
+            let windowHeight = $(window).outerHeight()
+            $(".main-section").css({
+                "padding-top": headerHeight,
+                "height": windowHeight
+            })
+        }
+
+        $(function() {
+            topMargin()
+        })
+    </script>
 
 </body>
-
-<script>
-    function topMargin() {
-        let headerHeight = $("header").outerHeight()
-        let windowHeight = $(window).outerHeight()
-        $(".main-section").css({
-            "margin-top": headerHeight,
-            "height": windowHeight - headerHeight
-        })
-    }
-
-    $(function() {
-        topMargin()
-
-        $(".second-stage-con .response-con form").on("submit", function(e) {
-            e.preventDefault()
-
-            $.magnificPopup.open({
-                showCloseBtn: true,
-                mainClass: 'mfp-fade',
-                items: {
-                    src: '#complete-con',
-                    type: 'inline'
-                },
-                callbacks: {
-                    open: function () {
-                        $("body").addClass("nooverflow")
-                    },
-                    close: function () {
-                        $("body").removeClass("nooverflow")
-                    }
-                }
-            })
-        })
-    })
-
-    $(window).on("resize", function() {
-        topMargin()
-    })
-</script>
 
 </html>
