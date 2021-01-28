@@ -65,6 +65,10 @@ svg {
     color: #003049;
 }
 
+.color-yellow {
+    color: #FDC04A;
+}
+
 .border-white {
     border-color: white;
 }
@@ -79,6 +83,20 @@ svg {
 
 .border-darkyellow {
     border-color: #FDC04A;
+}
+
+.fill-white {
+    fill: white;
+    svg {
+        fill: white;
+    }
+}
+
+.fill-blue {
+    fill: #003049;
+    svg {
+        fill: #003049;
+    }
 }
 
 .header-1 {
@@ -250,9 +268,8 @@ header {
                 }
             }
             a {
-                color: #003049;
                 &.active {
-                    border: rem(3) solid #003049;
+                    border: rem(3) solid;
                     border-radius: rem(200);
                     padding: rem(5) rem(10);
                 }
@@ -273,7 +290,6 @@ header {
             display: block;
             width: rem(18);
             height: rem(18);
-            fill: #003049;
         }   
     }
 }
@@ -605,7 +621,7 @@ header {
         top: 50%;
         left: 0;
         transform: translateY(-50%);
-        width: 50%;
+        width: 39%;
         height: 100vh;
         z-index: 1;
     }
@@ -615,14 +631,108 @@ header {
         top: 50%;
         right: 0;
         transform: translateY(-50%);
-        width: 50%;
+        width: 61%;
         height: 100vh;
         z-index: 1;
     }
     .inner {
         position: relative;
         z-index: 2;
+        .right-con {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .each {
+                cursor: pointer;
+                opacity: 0.5;
+                transition: all 0.15s ease-in-out;
+                &.active {
+                    opacity: 1;
+                }
+                &.inactive {
+                    opacity: 0.5 !important;
+                }
+                &.active-click {
+                    opacity: 1 !important;
+                }
+            }
+            .copy {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: 100%;
+                background: white;
+                border-radius: rem(28);
+                padding: rem(30);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                opacity: 0;
+                transition: all 0.15s ease-in-out;
+                &.active {
+                    opacity: 1;
+                }
+                ul {
+                    padding:{
+                        left: rem(15);
+                    }
+                    li {
+                        &:before {
+                            content: '\2022';
+                            color: #003049;
+                            display: inline-block;
+                            width: 1em;
+                            margin-left: -1em;
+                        }
+                    }
+                }
+            }
+            .next-con {
+                opacity: 0;
+                pointer-events: none;
+                transition: all 0.15s ease-in-out;
+                &.active {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+                p {
+                    display: inline-block;
+                    cursor: pointer;
+                }
+                button {
+                    width: rem(35);
+                    height: rem(35);
+                    background-color: #FDC04A;
+                    border-radius: 50%;
+                    margin:{
+                        left: rem(5);
+                    }
+                    cursor: pointer;
+                    svg {
+                        width: rem(13);
+                        height: rem(13);
+                        margin:{
+                            left: auto;
+                            right: auto;
+                        }
+                    }
+                }
+            }
+        }
     }
+}
+
+////////////////
+//FOURTH STAGE//
+///////////////
+
+.fourth-section-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .coming-soon-con {

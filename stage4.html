@@ -21,7 +21,7 @@
     <script src="https://embed.typeform.com/embed.js"></script>
 </head>
 
-<body class="nooverflow">
+<body>
     <header class="background-yellow">
         <div class="container">
             <div class="header-inner cf">
@@ -36,7 +36,8 @@
                             <a href="/" class="bold-600 color-blue">home</a>
                         </li>
                         <li>
-                            <a href="/suss-em-out.html" class="active border-blue bold-600 color-blue">suss &lsquo;em out</a>
+                            <a href="/suss-em-out.html" class="active border-blue bold-600 color-blue">suss &lsquo;em
+                                out</a>
                         </li>
                         <li>
                             <a href="/contact.html" class="bold-600 color-blue">contact</a>
@@ -44,7 +45,8 @@
                     </ul>
                     <ul class="social-nav-ul">
                         <li>
-                            <a href="https://www.facebook.com/Scram-Off-Scams-100280891861626/?ref=py_c&__xts__" target="_blank" class="fill-blue">
+                            <a href="https://www.facebook.com/Scram-Off-Scams-100280891861626/?ref=py_c&__xts__"
+                                target="_blank" class="fill-blue">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                     <path
                                         d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
@@ -65,65 +67,72 @@
         </div>
     </header>
 
-    <section class="first-stage-con main-section background-yellow">
+    <section class="fourth-section-con main-section background-yellow">
         <div class="container">
-            <div class="header-con text-center mb-30">
-                <h3 class="header-3 color-blue rounded border-blue uppercase bold">Stage #1</h3>
+            <div class="header-con text-center max-350">
+                <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20">Stage #4</h3>
+                <p class="body-2 color-blue">Can you spot the imposter with the mask? Search hard and click on the imposter to suss em’ out!</p>
             </div>
-            <div class="typeform-embed" id="typeform-embed"></div>
+        </div>
+        <div class="relative">
+            <img src="./assets/sos-imposter1.jpg" alt="" usemap="#imposter" class="image">
+            <map name="imposter">
+                <area shape="poly" alt="" title="" coords="1847,727,1856,932,1942,910,2010,736,1951,726" href="" target="" />
+            </map>
         </div>
     </section>
 
     <div class="global-complete-con text-center mfp-hide" id="complete-con">
-        <h2 class="header-2 color-blue bold uppercase mb-20">Congratulations! You have completed stage #1.</h2>
-        <p class="body-2 color-blue mb-30">Anyone can be susceptible to falling prey to scams. Stop to observe the legitimacy of a message asking you for your personal information before responding.</p>
-        <p class="body-2 color-blue mb-20">This is your word: <span class="global-complete-word">Together</span></p>
-        <a href="stage2.html" class="button-1 body-1 color-blue bold-800">One Step Forward!</a>
+        <h2 class="header-2 color-blue bold uppercase mb-20">Stage #4 completed! Almost there!</h2>
+        <p class="body-2 color-blue mb-20">Spot on! To take note: anyone can be an imposter, regardless of their shape, size, gender, age, and nationality. Stay vigilant and don't fall prey to their play.</p>
+        <p class="body-2 color-blue mb-20">This is your word: <span class="global-complete-word">Fight</span></p>
+        <a href="#" class="button-1 body-1 color-blue bold-800">Let's Go!</a>
     </div>
 
-</body>
+    <script src="./assets/imageMapResizer.min.js"></script>
 
-<script>
-    function topMargin() {
-        let headerHeight = $("header").outerHeight()
-        let windowHeight = $(window).outerHeight()
-        $(".main-section").css("margin-top", headerHeight)
-        $(".main-section").css("height", windowHeight - headerHeight)
-    }
+    <script>
+        $("map").imageMapResize()
 
-    function makeTypeform() {
-        let el = document.getElementById("typeform-embed")
-        window.typeformEmbed.makeWidget(el, "https://fs80vj7pboj.typeform.com/to/uqaJCz1W", {
-            onSubmit: function() {
+        function topMargin() {
+            let headerHeight = $("header").outerHeight()
+            let windowHeight = $(window).outerHeight()
+            $(".main-section").css({
+                "margin-top": headerHeight,
+                "height": windowHeight - headerHeight
+            })
+        }
+
+        $(function() {
+            topMargin()
+
+            $("area").on("click", function(e) {
+                e.preventDefault()
+
                 $.magnificPopup.open({
-                    showClassBtn: true,
+                    showCloseBtn: true,
                     mainClass: 'mfp-fade',
                     items: {
                         src: '#complete-con',
                         type: 'inline'
                     },
                     callbacks: {
-                        open: function () {
+                        open: function() {
                             $("body").addClass("nooverflow")
                         },
-                        close: function () {
+                        close: function() {
                             $("body").removeClass("nooverflow")
                         }
                     }
                 })
-            }
+            })
         })
-    }
 
-    $(function() {
-        topMargin()
+        $(window).on("resize", function() {
+            topMargin()
+        })
+    </script>
 
-        makeTypeform()
-    })
-
-    $(window).on("resize", function() {
-        topMargin()
-    })
-</script>
+</body>
 
 </html>
