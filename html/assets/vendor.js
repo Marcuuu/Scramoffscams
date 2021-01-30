@@ -65,16 +65,16 @@ return formatString.replace(placeholderRegex,value)}
      else {
          if (admin === null || admin === undefined) {
              if (!window.location.pathname.includes("coming-soon")) {
-    window.location = '/coming-soon'
+                window.location = '/coming-soon'
              }
          }
-     }                  
-     console.log(window.location)
-     console.log(admin)
+     }
  }
 
+ checkAdmin()
+
  $(function(){
-     checkAdmin()
+     
  	$(".global-select-div select").on("change",function(){
  		var elem = $(this);
  		elem.prev().html(elem.find("option:selected").text());
