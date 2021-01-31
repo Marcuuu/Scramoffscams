@@ -20,7 +20,7 @@
     <script src="html/assets/vendor.js" type="text/javascript"></script>
 </head>
 
-<body class="nooverflow">
+<body>
     <header class="background-yellow">
         <div class="container">
             <div class="header-inner cf">
@@ -105,10 +105,8 @@
 <script>
     function topMargin() {
         let headerHeight = $("header").outerHeight()
-        let windowHeight = $(window).outerHeight()
         $(".main-section").css({
-            "margin-top": headerHeight,
-            "height": windowHeight - headerHeight
+            "margin-top": headerHeight
         })
     }
 
