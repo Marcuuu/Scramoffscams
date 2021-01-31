@@ -784,6 +784,7 @@ header {
                 transition: all 0.5s ease-in-out;
             }
             &.answered {
+                pointer-events: none;
                 .question {
                     opacity: 0;
                 }
@@ -843,6 +844,38 @@ header {
                         weight: 600;
                     }
                     line-height: 1;
+                }
+            }
+        }
+    }
+    .endings {
+        opacity: 0;
+        pointer-events: none;
+        &.active {
+            pointer-events: all;
+        }
+    }
+    .next-con {
+        opacity: 0;
+        p {
+            display: inline-block;
+            cursor: pointer;
+        }
+        button {
+            width: rem(35);
+            height: rem(35);
+            background-color: #FDC04A;
+            border-radius: 50%;
+            margin:{
+                left: rem(5);
+            }
+            cursor: pointer;
+            svg {
+                width: rem(13);
+                height: rem(13);
+                margin:{
+                    left: auto;
+                    right: auto;
                 }
             }
         }
