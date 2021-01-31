@@ -106,7 +106,8 @@
     function topMargin() {
         let headerHeight = $("header").outerHeight()
         $(".main-section").css({
-            "margin-top": headerHeight
+            "margin-top": headerHeight,
+            "height": "calc(100vh - " + headerHeight + ")"
         })
     }
 
