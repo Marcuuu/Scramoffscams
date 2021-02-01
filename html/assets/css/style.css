@@ -4141,6 +4141,70 @@ header .social-nav-ul svg {
   margin-right: auto;
 }
 
+.sixth-stage-con .left-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFF9F0;
+  width: 39%;
+  height: 100vh;
+  z-index: 1;
+}
+.sixth-stage-con .right-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #003049;
+  width: 61%;
+  height: 100vh;
+  z-index: 1;
+}
+.sixth-stage-con .inner {
+  position: relative;
+  z-index: 2;
+}
+.sixth-stage-con .right-con {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.sixth-stage-con .right-con .play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 150px;
+  width: 9.375rem;
+  height: 150px;
+  height: 9.375rem;
+  background-color: #9B2C2E;
+  border: 2px solid #003049;
+  border: 0.125rem solid #003049;
+  border-radius: 50%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.sixth-stage-con .right-con .svg-arrow {
+  position: absolute;
+  top: -25px;
+  top: -1.5625rem;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  width: -webkit-fit-content;
+  width: fit-content;
+}
+
 .coming-soon-con {
   display: -ms-flexbox;
   display: flex;

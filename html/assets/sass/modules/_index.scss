@@ -882,6 +882,63 @@ header {
     }
 }
 
+///////////////
+//SIXTH STAGE//
+///////////////
+
+.sixth-stage-con {
+    .left-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #FFF9F0;
+        width: 39%;
+        height: 100vh;
+        z-index: 1;
+    }
+    .right-bg {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: #003049;
+        width: 61%;
+        height: 100vh;
+        z-index: 1;
+    }
+    .inner {
+        position: relative;
+        z-index: 2;
+    }
+    .right-con {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: rem(150);
+            height: rem(150);
+            background-color: #9B2C2E;
+            border: rem(2) solid #003049;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            cursor: pointer;
+        }
+        .svg-arrow {
+            position: absolute;
+            top: rem(-25);
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+        }
+    }
+}
+
 .coming-soon-con {
     display: flex;
     align-items: center;
