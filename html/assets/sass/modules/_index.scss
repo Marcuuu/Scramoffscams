@@ -236,6 +236,10 @@ svg {
     }
 }
 
+.z-10 {
+    z-index: 10;
+}
+
 header {
     position: fixed;
     top: 0;
@@ -298,6 +302,10 @@ header {
     }
 }
 
+.index-body {
+    overflow-x: hidden;
+}
+
 .viewing-con {
     position: relative;
     border: rem(5) solid #003049;
@@ -336,6 +344,26 @@ header {
         display: flex;
         align-items: center;
     }
+    .svg-bg1 {
+        position: absolute;
+        top: rem(-100);
+        left: rem(-200);
+    }
+    .svg-bg2 {
+        position: absolute;
+        bottom: rem(-200);
+        left: 0;
+    }
+    .svg-bg3 {
+        position: absolute;
+        bottom: rem(-200);
+        right: 0;
+    }
+    .svg-bg4 {
+        position: absolute;
+        bottom: rem(-400);
+        right: rem(-270);
+    }
 }
 
 .index-who {
@@ -373,6 +401,36 @@ header {
         img {
             max-width: rem(350);
         }
+    }
+    .svg-bg1 {
+        position: absolute;
+        top: rem(30);
+        left: rem(-40);
+    }
+    .svg-bg2 {
+        position: absolute;
+        top: rem(230);
+        left: rem(-160);
+    }
+    .svg-bg3 {
+        position: absolute;
+        bottom: rem(-250);
+        left: rem(-200);
+    }
+    .svg-bg4 {
+        position: absolute;
+        top: rem(-130);
+        right: rem(-100);
+    }
+    .svg-bg5 {
+        position: absolute;
+        top: rem(150);
+        right: rem(-170);
+    }
+    .svg-bg6 {
+        position: absolute;
+        bottom: rem(-120);
+        right: 0;
     }
 }
 
@@ -430,6 +488,16 @@ header {
             }
         }
     }
+    .svg-bg1 {
+        position: absolute;
+        top: rem(350);
+        left: rem(180);
+    }
+    .svg-bg2 {
+        position: absolute;
+        top: rem(400);
+        right: rem(200);
+    }
 }
 
 .index-partners {
@@ -438,6 +506,36 @@ header {
             max-height: rem(80);
             object-fit: contain;
         }
+    }
+    .svg-bg1 {
+        position: absolute;
+        top: rem(-100);
+        left: rem(-200);
+    }
+    .svg-bg2 {
+        position: absolute;
+        top: 0;
+        right: rem(-200);
+    }
+    .svg-bg3 {
+        position: absolute;
+        top: rem(300);
+        left: rem(-200);
+    }
+    .svg-bg4 {
+        position: absolute;
+        top: rem(400);
+        right: rem(-250);
+    }
+    .svg-bg5 {
+        position: absolute;
+        bottom: 0;
+        left: rem(-100);
+    }
+    .svg-bg6 {
+        position: absolute;
+        bottom: rem(80);
+        right: rem(100);
     }
 }
 
@@ -542,6 +640,41 @@ header {
             right: auto;
         }
     }
+    .svg-bg1 {
+        position: absolute;
+        top: rem(30);
+        left: rem(-140);
+    }
+    .svg-bg2 {
+        position: absolute;
+        top: rem(180);
+        left: rem(-60);
+    }
+    .svg-bg3 {
+        position: absolute;
+        top: rem(150);
+        right: rem(80);
+    }
+    .svg-bg4 {
+        position: absolute;
+        bottom: rem(40);
+        left: rem(-100);
+    }
+    .svg-bg5 {
+        position: absolute;
+        bottom: rem(-100);
+        right: rem(-200);
+    }
+    .svg-bg6 {
+        position: absolute;
+        top: rem(250);
+        right: 0;
+    }
+    .svg-bg7 {
+        position: absolute;
+        bottom: rem(100);
+        right: 0;
+    }
 }
 
 ///////////////
@@ -549,10 +682,55 @@ header {
 //////////////
 
 .first-stage-con {
+    .inner {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+        padding:{
+            bottom: 5%;
+        }
+    }
     .typeform-embed {
         border: rem(5) solid #003049;
         border-radius: rem(5);
+        width: 100%;
         height: rem(600);
+    }
+    .svg-bg1 {
+        position: absolute;
+        top: rem(50);
+        left: rem(50);
+    }
+    .svg-bg2 {
+        position: absolute;
+        top: rem(450);
+        left: rem(20);
+    }
+    .svg-bg3 {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    .svg-bg4 {
+        position: absolute;
+        top: rem(170);
+        right: rem(50);
+    }
+    .svg-bg5 {
+        position: absolute;
+        bottom: 0;
+        right: rem(-280);
+    }
+    .svg-bg6 {
+        position: absolute;
+        bottom: rem(300);
+        right: rem(20);
+    }
+    .svg-bg7 {
+        position: absolute;
+        bottom: 0;
+        right: rem(150);
     }
 }
 

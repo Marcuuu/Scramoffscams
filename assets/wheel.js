@@ -78,19 +78,6 @@
             ctx.fillText(text, -ctx.measureText(text).width / 2, 0);
             ctx.restore();
           } 
-          
-          //Arrow
-        //   ctx.fillStyle = "black";
-        //   ctx.beginPath();
-        //   ctx.moveTo(s.radius - 4, s.radius - (s.outsideRadius + 5));
-        //   ctx.lineTo(s.radius + 4, s.radius - (s.outsideRadius + 5));
-        //   ctx.lineTo(s.radius + 4, s.radius - (s.outsideRadius - 5));
-        //   ctx.lineTo(s.radius + 9, s.radius - (s.outsideRadius - 5));
-        //   ctx.lineTo(s.radius + 0, s.radius - (s.outsideRadius - 13));
-        //   ctx.lineTo(s.radius - 9, s.radius - (s.outsideRadius - 5));
-        //   ctx.lineTo(s.radius - 4, s.radius - (s.outsideRadius - 5));
-        //   ctx.lineTo(s.radius - 4, s.radius - (s.outsideRadius + 5));
-        //   ctx.fill();
         }
       };
 
@@ -107,7 +94,7 @@
         var spinAngle;
         s.spinTime += 30;
         console.log(s.spinTime);
-        if((s.spinTime + 5000) >= s.spinTimeTotal) {
+        if((s.spinTime + 3000) >= s.spinTimeTotal) {
           _this.stop();
           return;
         }
