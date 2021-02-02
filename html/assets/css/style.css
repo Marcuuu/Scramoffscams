@@ -4030,10 +4030,6 @@ header .social-nav-ul svg {
 }
 
 .second-stage-con .inner {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: end;
-  align-items: flex-end;
   height: 100%;
 }
 .second-stage-con .right-con {
@@ -4041,26 +4037,29 @@ header .social-nav-ul svg {
   display: flex;
   -ms-flex-align: end;
   align-items: flex-end;
+  height: 100%;
 }
 .second-stage-con .right-con video {
   width: 500px;
   width: 31.25rem;
   margin-left: auto;
   margin-right: auto;
+  max-height: 650px;
+  max-height: 40.625rem;
 }
 .second-stage-con .response-con {
   position: absolute;
-  bottom: 33px;
-  bottom: 2.0625rem;
+  bottom: 30px;
+  bottom: 1.875rem;
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 70%;
+  width: 60%;
 }
 .second-stage-con .response-con input {
   width: 100%;
-  padding: 20px;
-  padding: 1.25rem;
+  padding: 12px 20px;
+  padding: 0.75rem 1.25rem;
   background-color: #EEEFF0;
   border-radius: 200px;
   border-radius: 12.5rem;
@@ -4072,14 +4071,14 @@ header .social-nav-ul svg {
 .second-stage-con .response-con .continue-btn {
   position: absolute;
   top: 50%;
-  right: 15px;
-  right: 0.9375rem;
+  right: 10px;
+  right: 0.625rem;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: 35px;
-  width: 2.1875rem;
-  height: 35px;
-  height: 2.1875rem;
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
   background: #9E2B2B;
   border-radius: 50%;
   display: -ms-flexbox;

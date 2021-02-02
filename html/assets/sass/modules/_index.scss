@@ -740,30 +740,30 @@ header {
 
 .second-stage-con {
     .inner {
-        display: flex;
-        align-items: flex-end;
         height: 100%;
     }
     .right-con {
         display: flex;
         align-items: flex-end;
+        height: 100%;
         video {
             width: rem(500);
             margin:{
                 left: auto;
                 right: auto;
             }
+            max-height: rem(650);
         }
     }
     .response-con {
         position: absolute;
-        bottom: rem(33);
+        bottom: rem(30);
         left: 50%;
         transform: translateX(-50%);
-        width: 70%;
+        width: 60%;
         input {
             width: 100%;
-            padding: rem(20);
+            padding: rem(12) rem(20);
             background-color: #EEEFF0;
             border-radius: rem(200);
             &::placeholder {
@@ -774,10 +774,10 @@ header {
         .continue-btn {
             position: absolute;
             top: 50%;
-            right: rem(15);
+            right: rem(10);
             transform: translateY(-50%);
-            width: rem(35);
-            height: rem(35);
+            width: rem(30);
+            height: rem(30);
             background: #9E2B2B;
             border-radius: 50%;
             display: flex;
