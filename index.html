@@ -39,7 +39,7 @@
                             <a href="/suss-em-out.html" class="bold-600 color-blue">suss 'em out</a>
                         </li>
                         <li>
-                            <a href="/contact.html" class="bold-600 color-blue">contact</a>
+                            <a href="/contact.html" class="contact-link bold-600 color-blue">contact</a>
                         </li>
                     </ul>
                     <ul class="social-nav-ul">
@@ -844,7 +844,7 @@
             </div>
         </section>
         <section
-            class="index-social background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80">
+            class="index-social background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80" id="contact-section">
             <div class="container">
                 <div class="index-social-inner">
                     <div class="header-con text-center">
@@ -983,6 +983,13 @@
 
         $(".index-team-ul .each").on("mouseleave", function () {
             $(this).find(".description").removeClass("active")
+        })
+
+        $(".contact-link").on("click", function(e) {
+            e.preventDefault()
+            $("html, body").animate({
+                scrollTop: $("#contact-section").offset().top
+            }, 700)
         })
     })
     $(window).on("scroll", function () {
