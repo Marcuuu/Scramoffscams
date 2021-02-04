@@ -101,14 +101,15 @@
         spinAngle = s.spinAngleStart - _this.easeOut(s.spinTime, 0, s.spinAngleStart, s.spinTimeTotal);
         s.startAngle += (spinAngle * Math.PI / 180);
         _this.draw();
-        s.spinTimeout = setTimeout(_this.rotate, 30);
+        s.spinTimeout = setTimeout(_this.rotate, 20);
       };
 
       this.spin = function(cb) {
           _this.cb = cb;
+          console.log(cb)
           s.spinAngleStart = Math.random() * 10 + 10;
           s.spinTime = 0;
-          s.spinTimeTotal = Math.random() * 3 + 4 * 3000;
+          s.spinTimeTotal = Math.random() * 3 + 5 * 3000;
           console.log('spinTimeTotal: %d', s.spinTimeTotal);
           _this.rotate();
       };

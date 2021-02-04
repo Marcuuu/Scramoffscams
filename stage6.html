@@ -96,11 +96,17 @@
         </div>
     </section>
 
-    <div class="global-complete-con text-center" id="complete-con">
+    <div class="global-complete-con text-center mfp-hide" id="complete-con">
         <h2 class="header-2 color-blue bold uppercase mb-20">You've finally reached the end of suss em' out!</h2>
         <p class="body-2 color-blue mb-20">It's important for all of us to take charge of our digital footprint and practice safe online habits! We all have a part to play in ensuring the online safety of ourselves and our loved ones.</p>
         <p class="body-2 color-blue mb-20">This is your word: <span class="global-complete-word">Scam</span></p>
-        <a href="#" class="button-1 body-1 color-blue bold-800">Submit your final sentence here!</a>
+        <button class="final-btn button-1 body-1 color-blue bold-800">Submit your final sentence here!</button>
+    </div>
+
+    <div class="answer-con max-700 mfp-hide" id="complete-con2">
+        <div class="typeform-widget" data-url="https://form.typeform.com/to/rCOJUcuZ?typeform-medium=embed-snippet"
+            style="width: 100%; height: 500px;"></div>
+        <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
     </div>
 
     <script>
@@ -145,6 +151,29 @@
                         }
                     })
                 })
+            })
+
+            $(".final-btn").on("click", function(e) {
+                e.preventDefault()
+                $.magnificPopup.close()
+                setTimeout(function() {
+                    $.magnificPopup.open({
+                        showCloseBtn: true,
+                        mainClass: 'mfp-fade',
+                        items: {
+                            src: '#complete-con2',
+                            type: 'inline'
+                        },
+                        callbacks: {
+                            open: function () {
+                                $("body").addClass("nooverflow")
+                            },
+                            close: function () {
+                                $("body").removeClass("nooverflow")
+                            }
+                        }
+                    })
+                }, 100)
             })
         })
 
