@@ -3279,7 +3279,7 @@ svg {
 }
 
 .background-red {
-  background-color: #E46E63;
+  background-color: #9e2b2b;
 }
 
 .background-orange {
@@ -4032,11 +4032,16 @@ header .social-nav-ul svg {
 .second-stage-con .inner {
   height: 100%;
 }
+.second-stage-con .left-con {
+  height: 100%;
+}
 .second-stage-con .right-con {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: end;
   align-items: flex-end;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 100%;
 }
 .second-stage-con .right-con video {
@@ -4046,6 +4051,8 @@ header .social-nav-ul svg {
   margin-right: auto;
   max-height: 650px;
   max-height: 40.625rem;
+  display: -ms-flexbox;
+  display: flex;
 }
 .second-stage-con .response-con {
   position: absolute;
@@ -4054,7 +4061,7 @@ header .social-nav-ul svg {
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 60%;
+  width: 55%;
 }
 .second-stage-con .response-con input {
   width: 100%;
@@ -4095,6 +4102,65 @@ header .social-nav-ul svg {
   height: 13px;
   height: 0.8125rem;
 }
+.second-stage-con .svg-bg1 {
+  position: absolute;
+  left: -230px;
+  left: -14.375rem;
+  bottom: -250px;
+  bottom: -15.625rem;
+}
+.second-stage-con .svg-bg2 {
+  position: absolute;
+  left: -200px;
+  left: -12.5rem;
+  bottom: 250px;
+  bottom: 15.625rem;
+}
+.second-stage-con .svg-bg3 {
+  position: absolute;
+  left: -100px;
+  left: -6.25rem;
+  bottom: 50px;
+  bottom: 3.125rem;
+}
+.second-stage-con .svg-bg4 {
+  position: absolute;
+  left: 120px;
+  left: 7.5rem;
+  bottom: -40px;
+  bottom: -2.5rem;
+}
+.second-stage-con .svg-bg4 svg {
+  height: 100%;
+}
+.second-stage-con .svg-bg5 {
+  position: absolute;
+  left: -50px;
+  left: -3.125rem;
+  bottom: 200px;
+  bottom: 12.5rem;
+}
+.second-stage-con .svg-bg6 {
+  position: absolute;
+  right: -200px;
+  right: -12.5rem;
+  bottom: 100px;
+  bottom: 6.25rem;
+}
+.second-stage-con .svg-bg7 {
+  position: absolute;
+  right: -220px;
+  right: -13.75rem;
+  bottom: 320px;
+  bottom: 20rem;
+}
+.second-stage-con .svg-bg8 {
+  position: absolute;
+  right: -80px;
+  right: -5rem;
+  bottom: 50px;
+  bottom: 3.125rem;
+}
 
 .third-stage-con .left-bg {
   background-color: #FFF9F0;
@@ -4116,6 +4182,7 @@ header .social-nav-ul svg {
   transform: translateY(-50%);
   width: 61%;
   height: 100vh;
+  overflow: hidden;
   z-index: 1;
 }
 .third-stage-con .inner {
@@ -4143,6 +4210,9 @@ header .social-nav-ul svg {
 }
 .third-stage-con .inner .right-con .each.active-click {
   opacity: 1 !important;
+}
+.third-stage-con .inner .right-con .svg-con svg {
+  height: 100%;
 }
 .third-stage-con .inner .right-con .copy {
   position: absolute;
@@ -4213,6 +4283,49 @@ header .social-nav-ul svg {
   height: 0.8125rem;
   margin-left: auto;
   margin-right: auto;
+}
+.third-stage-con .svg-bg1 {
+  position: absolute;
+  left: -270px;
+  left: -16.875rem;
+  bottom: 200px;
+  bottom: 12.5rem;
+}
+.third-stage-con .svg-bg2 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.third-stage-con .svg-bg2 svg {
+  height: 100%;
+}
+.third-stage-con .svg-bg3 {
+  position: absolute;
+  right: 100px;
+  right: 6.25rem;
+  bottom: 200px;
+  bottom: 12.5rem;
+}
+.third-stage-con .svg-bg4 {
+  position: absolute;
+  right: 70px;
+  right: 4.375rem;
+  bottom: -40px;
+  bottom: -2.5rem;
+}
+.third-stage-con .svg-bg5 {
+  position: absolute;
+  left: -350px;
+  left: -21.875rem;
+  bottom: -250px;
+  bottom: -15.625rem;
+}
+.third-stage-con .svg-bg6 {
+  position: absolute;
+  right: -150px;
+  right: -9.375rem;
+  top: 200px;
+  top: 12.5rem;
 }
 
 .fourth-section-con {
