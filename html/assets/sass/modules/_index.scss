@@ -11,6 +11,11 @@ b,
     }
 }
 
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+
 .italic {
     font:{
         style: italic;
@@ -702,7 +707,7 @@ header {
         border: rem(5) solid #003049;
         border-radius: rem(5);
         width: 100%;
-        height: rem(600);
+        height: rem(500);
     }
     .svg-bg1 {
         position: absolute;
@@ -1178,6 +1183,21 @@ header {
       left: rem(100);
       top: rem(-110);
     }
+    .svg-bg6 {
+        position: absolute;
+        right: rem(-80);
+        top: rem(200);
+    }
+    .svg-bg7 {
+        position: absolute;
+        left: 0;
+        top: rem(500);
+    }
+    .svg-bg8 {
+        position: absolute;
+        right: rem(-80);
+        bottom: rem(-100);
+    }
 }
 
 ///////////////
@@ -1234,6 +1254,21 @@ header {
             transform: translateX(-50%);
             width: fit-content;
         }
+    }
+    .svg-bg1 {
+        position: absolute;
+        left: rem(-150);
+        bottom: rem(100);
+    }
+    .svg-bg2 {
+        position: absolute;
+        left: rem(-200);
+        bottom: rem(-20);
+    }
+    .svg-bg3 {
+        position: absolute;
+        right: 0;
+        bottom: rem(400);
     }
 }
 
