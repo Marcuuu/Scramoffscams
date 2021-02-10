@@ -481,6 +481,10 @@
                     }
                 })
 
+                $(this).delay(500).queue(function() {
+                    $(this).closest("li").css("opacity", 0)
+                })
+
                 let end = $(this).attr("data-end")
                 if (end != undefined) {
                     $(".question-list").animate({
