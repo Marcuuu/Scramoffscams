@@ -4633,6 +4633,26 @@ header .social-nav-ul svg {
   bottom: 25rem;
 }
 
+.full-message-con {
+  position: relative;
+  background-color: #FFF9F0;
+  border: 5px solid #003049;
+  border: 0.3125rem solid #003049;
+  border-radius: 5px;
+  border-radius: 0.3125rem;
+  padding: 50px;
+  padding: 3.125rem;
+  max-width: 500px;
+  max-width: 31.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sixth-stage-complete .final-btn {
+  font-size: 16px;
+  font-size: 1rem;
+}
+
 .answer-con {
   border: 5px solid #003049;
   border: 0.3125rem solid #003049;

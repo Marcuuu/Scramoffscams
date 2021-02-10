@@ -247,7 +247,14 @@
         </div>
     </section>
 
-    <div class="global-complete-con text-center mfp-hide" id="complete-con">
+    <div class="full-message-con full-1 text-center mfp-hide" id="full-1">
+        <h2 class="header-2 color-blue bold uppercase mb-30">I will protecc my fam by</h2>
+        <h3 class="header-3 color-blue bold">Stopping and thinking</h3>
+        <p class="body-2 color-blue mb-30">before giving away personal information</p>
+        <button class="to-complete-btn button-1 body-1 color-blue bold-800">Next</button>
+    </div>
+
+    <div class="sixth-stage-complete global-complete-con text-center mfp-hide" id="complete-con">
         <h2 class="header-2 color-blue bold uppercase mb-20">You've finally reached the end of suss em' out!</h2>
         <p class="body-2 color-blue mb-20">It's important for all of us to take charge of our digital footprint and practice safe online habits! We all have a part to play in ensuring the online safety of ourselves and our loved ones.</p>
         <p class="body-2 color-blue mb-20">This is your word: <span class="global-complete-word">Scam</span></p>
@@ -285,6 +292,30 @@
 
             $(".sixth-stage-con .right-con .play-btn").on("click", function() {
                 wheel.spin(function(member) {
+                    console.log(member)
+                    $.magnificPopup.open({
+                        showCloseBtn: true,
+                        mainClass: 'mfp-fade',
+                        items: {
+                            src: '#full-1',
+                            type: 'inline'
+                        },
+                        callbacks: {
+                            open: function() {
+                                $("body").addClass("nooverflow")
+                            },
+                            close: function() {
+                                $("body").removeClass("nooverflow")
+                            }
+                        }
+                    })
+                })
+            })
+
+            $(".to-complete-btn").on("click", function(e) {
+                e.preventDefault()
+                $.magnificPopup.close()
+                setTimeout(function() {
                     $.magnificPopup.open({
                         showCloseBtn: true,
                         mainClass: 'mfp-fade',

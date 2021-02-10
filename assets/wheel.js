@@ -41,7 +41,8 @@
     this.draw = function() {
         var angle,
             text,
-            i;
+            i,
+            j;
 
         canvas = document.getElementById(s.el);
         canvas.width = s.width;
