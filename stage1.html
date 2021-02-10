@@ -191,18 +191,13 @@
         window.typeformEmbed.makeWidget(el, "https://fs80vj7pboj.typeform.com/to/uqaJCz1W", {
             onSubmit: function() {
                 $.magnificPopup.open({
+                    showCloseBtn: false,
+                    closeOnBgClick: false,
+                    enableEscapeKey: false,
                     mainClass: 'mfp-fade',
                     items: {
                         src: '#complete-con',
                         type: 'inline'
-                    },
-                    callbacks: {
-                        open: function () {
-                            $("body").addClass("nooverflow")
-                        },
-                        close: function () {
-                            $("body").removeClass("nooverflow")
-                        }
                     }
                 })
             }

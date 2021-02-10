@@ -109,7 +109,9 @@
                 e.preventDefault()
 
                 $.magnificPopup.open({
-                    showCloseBtn: true,
+                    showCloseBtn: false,
+                    closeOnBgClick: false,
+                    enableEscapeKey: false,
                     mainClass: 'mfp-fade',
                     items: {
                         src: '#complete-con',

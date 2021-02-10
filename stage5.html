@@ -514,19 +514,13 @@
 
             $(".next-con").on("click", function() {
                 $.magnificPopup.open({
-                    showCloseBtn: true,
+                    showCloseBtn: false,
+                    closeOnBgClick: false,
+                    enableEscapeKey: false,
                     mainClass: 'mfp-fade',
                     items: {
                         src: '#complete-con',
                         type: 'inline'
-                    },
-                    callbacks: {
-                        open: function() {
-                            $("body").addClass("nooverflow")
-                        },
-                        close: function() {
-                            $("body").removeClass("nooverflow")
-                        }
                     }
                 })
             })

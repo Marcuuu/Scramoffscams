@@ -254,6 +254,41 @@
         <button class="to-complete-btn button-1 body-1 color-blue bold-800">Next</button>
     </div>
 
+    <div class="full-message-con full-2 text-center mfp-hide" id="full-2">
+        <h2 class="header-2 color-blue bold uppercase mb-30">I will protecc my fam by</h2>
+        <h3 class="header-3 color-blue bold">Recalling the signs</h3>
+        <p class="body-2 color-blue mb-30">of an impersonated account when a "friend" follows me</p>
+        <button class="to-complete-btn button-1 body-1 color-blue bold-800">Next</button>
+    </div>
+
+    <div class="full-message-con full-3 text-center mfp-hide" id="full-3">
+        <h2 class="header-2 color-blue bold uppercase mb-30">I will protecc my fam by</h2>
+        <h3 class="header-3 color-blue bold">Encouraging others</h3>
+        <p class="body-2 color-blue mb-30">to report to relevant authorities if they have been scammed online</p>
+        <button class="to-complete-btn button-1 body-1 color-blue bold-800">Next</button>
+    </div>
+
+    <div class="full-message-con full-4 text-center mfp-hide" id="full-4">
+        <h2 class="header-2 color-blue bold uppercase mb-30">I will protecc my fam by</h2>
+        <h3 class="header-3 color-blue bold">Reporting</h3>
+        <p class="body-2 color-blue mb-30">impersonated accounts to the social media platform</p>
+        <button class="to-complete-btn button-1 body-1 color-blue bold-800">Next</button>
+    </div>
+
+    <div class="full-message-con full-5 text-center mfp-hide" id="full-5">
+        <h2 class="header-2 color-blue bold uppercase mb-30">I will protecc my fam by</h2>
+        <h3 class="header-3 color-blue bold">Sharing</h3>
+        <p class="body-2 color-blue mb-30">anti-scam information with my loved ones</p>
+        <button class="to-complete-btn button-1 body-1 color-blue bold-800">Next</button>
+    </div>
+
+    <div class="full-message-con full-6 text-center mfp-hide" id="full-6">
+        <h2 class="header-2 color-blue bold uppercase mb-30">I will protecc my fam by</h2>
+        <h3 class="header-3 color-blue bold">Alerting my friends</h3>
+        <p class="body-2 color-blue mb-30">if I suspect that their account has been impersonated</p>
+        <button class="to-complete-btn button-1 body-1 color-blue bold-800">Next</button>
+    </div>
+
     <div class="sixth-stage-complete global-complete-con text-center mfp-hide" id="complete-con">
         <h2 class="header-2 color-blue bold uppercase mb-20">You've finally reached the end of suss em' out!</h2>
         <p class="body-2 color-blue mb-20">It's important for all of us to take charge of our digital footprint and practice safe online habits! We all have a part to play in ensuring the online safety of ourselves and our loved ones.</p>
@@ -292,23 +327,81 @@
 
             $(".sixth-stage-con .right-con .play-btn").on("click", function() {
                 wheel.spin(function(member) {
-                    console.log(member)
-                    $.magnificPopup.open({
-                        showCloseBtn: true,
-                        mainClass: 'mfp-fade',
-                        items: {
-                            src: '#full-1',
-                            type: 'inline'
-                        },
-                        callbacks: {
-                            open: function() {
-                                $("body").addClass("nooverflow")
-                            },
-                            close: function() {
-                                $("body").removeClass("nooverflow")
-                            }
-                        }
-                    })
+                    member = member.toLowerCase()
+                    switch (member) {
+                        case 'stop and think':
+                            $.magnificPopup.open({
+                                showCloseBtn: false,
+                                closeOnBgClick: false,
+                                enableEscapeKey: false,
+                                mainClass: 'mfp-fade',
+                                items: {
+                                    src: '#full-1',
+                                    type: 'inline'
+                                }
+                            })
+                            break
+                        case 'recall the signs':
+                            $.magnificPopup.open({
+                                showCloseBtn: false,
+                                closeOnBgClick: false,
+                                enableEscapeKey: false,
+                                mainClass: 'mfp-fade',
+                                items: {
+                                    src: '#full-2',
+                                    type: 'inline'
+                                }
+                            })
+                            break
+                        case 'encourage others':
+                            $.magnificPopup.open({
+                                showCloseBtn: false,
+                                closeOnBgClick: false,
+                                enableEscapeKey: false,
+                                mainClass: 'mfp-fade',
+                                items: {
+                                    src: '#full-3',
+                                    type: 'inline'
+                                }
+                            })
+                            break
+                        case 'report':
+                            $.magnificPopup.open({
+                                showCloseBtn: false,
+                                closeOnBgClick: false,
+                                enableEscapeKey: flase,
+                                mainClass: 'mfp-fade',
+                                items: {
+                                    src: '#full-4',
+                                    type: 'inline'
+                                }
+                            })
+                            break
+                        case 'share':
+                            $.magnificPopup.open({
+                                showCloseBtn: false,
+                                closeOnBgClick: false,
+                                enableEscapeKey: false,
+                                mainClass: 'mfp-fade',
+                                items: {
+                                    src: '#full-5',
+                                    type: 'inline'
+                                }
+                            })
+                            break
+                        case 'alert my friends':
+                            $.magnificPopup.open({
+                                showCloseBtn: false,
+                                closeOnBgClick: false,
+                                enableEscapeKey: false,
+                                mainClass: 'mfp-fade',
+                                items: {
+                                    src: '#full-6',
+                                    type: 'inline'
+                                }
+                            })
+                            break
+                    }
                 })
             })
 
@@ -317,22 +410,16 @@
                 $.magnificPopup.close()
                 setTimeout(function() {
                     $.magnificPopup.open({
-                        showCloseBtn: true,
+                        showCloseBtn: false,
+                        closeOnBgClick: false,
+                        enableEscapeKey: false,
                         mainClass: 'mfp-fade',
                         items: {
                             src: '#complete-con',
                             type: 'inline'
-                        },
-                        callbacks: {
-                            open: function() {
-                                $("body").addClass("nooverflow")
-                            },
-                            close: function() {
-                                $("body").removeClass("nooverflow")
-                            }
                         }
                     })
-                })
+                }, 100)
             })
 
             $(".final-btn").on("click", function(e) {
@@ -340,19 +427,13 @@
                 $.magnificPopup.close()
                 setTimeout(function() {
                     $.magnificPopup.open({
-                        showCloseBtn: true,
+                        showCloseBtn: false,
+                        closeOnBgClick: false,
+                        enableEscapeKey: false,
                         mainClass: 'mfp-fade',
                         items: {
                             src: '#complete-con2',
                             type: 'inline'
-                        },
-                        callbacks: {
-                            open: function () {
-                                $("body").addClass("nooverflow")
-                            },
-                            close: function () {
-                                $("body").removeClass("nooverflow")
-                            }
                         }
                     })
                 }, 100)
