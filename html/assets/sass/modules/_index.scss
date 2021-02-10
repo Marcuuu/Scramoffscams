@@ -240,6 +240,13 @@ svg {
     z-index: 10;
 }
 
+.bg-element {
+  svg {
+    width: auto;
+    height: auto;
+  }
+}
+
 header {
     position: fixed;
     top: 0;
@@ -968,9 +975,6 @@ header {
         position: absolute;
         left: 0;
         bottom: 0;
-        svg {
-            height: 100%;
-        }
     }
     .svg-bg3 {
         position: absolute;
@@ -985,7 +989,7 @@ header {
     .svg-bg5 {
         position: absolute;
         left: rem(-350);
-        bottom: rem(-250);
+        bottom: rem(-40);
     }
     .svg-bg6 {
         position: absolute;
@@ -1025,11 +1029,15 @@ header {
         background-color: #003049;
         width: 61%;
         height: 100vh;
+        overflow: hidden;
         z-index: 1;
     }
     .inner {
         position: relative;
         z-index: 2;
+    }
+    .left-con {
+      height: 100%;
     }
     .right-con {
         display: flex;
@@ -1144,6 +1152,31 @@ header {
                 }
             }
         }
+    }
+    .svg-bg1 {
+      position: absolute;
+      left: 0;
+      bottom: rem(-80);
+    }
+    .svg-bg2 {
+      position: absolute;
+      left: rem(80);
+      bottom: 0;
+    }
+    .svg-bg3 {
+      position: absolute;
+      left: rem(20);
+      bottom: rem(370);
+    }
+    .svg-bg4 {
+      position: absolute;
+      right: rem(-20);
+      top: rem(150);
+    }
+    .svg-bg5 {
+      position: absolute;
+      left: rem(100);
+      top: rem(-110);
     }
 }
 

@@ -35,7 +35,7 @@ blockquote, q {
 
 blockquote:before, blockquote:after,
 q:before, q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -3151,7 +3151,7 @@ img, video, audio, table, embed, applet {
   text-decoration: underline;
 }
 
-.uppercase, .button-1, .button-2 {
+.uppercase, .button-2, .button-1 {
   text-transform: uppercase;
 }
 
@@ -3221,19 +3221,19 @@ img, video, audio, table, embed, applet {
   left: 0;
 }
 
-.container, .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .cf {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .container, .cf {
   *zoom: 1;
 }
-.container:before, .col-1:before, .col-2:before, .col-3:before, .col-4:before, .col-5:before, .col-6:before, .col-7:before, .col-8:before, .col-9:before, .col-10:before, .col-11:before, .col-12:before, .container:after, .col-1:after, .col-2:after, .col-3:after, .col-4:after, .col-5:after, .col-6:after, .col-7:after, .col-8:after, .col-9:after, .col-10:after, .col-11:after, .col-12:after, .cf:before, .cf:after {
+.col-1:before, .col-2:before, .col-3:before, .col-4:before, .col-5:before, .col-6:before, .col-7:before, .col-8:before, .col-9:before, .col-10:before, .col-11:before, .col-12:before, .container:before, .col-1:after, .col-2:after, .col-3:after, .col-4:after, .col-5:after, .col-6:after, .col-7:after, .col-8:after, .col-9:after, .col-10:after, .col-11:after, .col-12:after, .container:after, .cf:before, .cf:after {
   content: " ";
   display: table;
 }
-.container:after, .col-1:after, .col-2:after, .col-3:after, .col-4:after, .col-5:after, .col-6:after, .col-7:after, .col-8:after, .col-9:after, .col-10:after, .col-11:after, .col-12:after, .cf:after {
+.col-1:after, .col-2:after, .col-3:after, .col-4:after, .col-5:after, .col-6:after, .col-7:after, .col-8:after, .col-9:after, .col-10:after, .col-11:after, .col-12:after, .container:after, .cf:after {
   clear: both;
 }
 
 body {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 b,
@@ -3255,11 +3255,11 @@ svg {
 }
 
 .header-font {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .body-font {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .background-darkyellow, .button-1 {
@@ -3329,7 +3329,7 @@ svg {
 }
 
 .header-1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 50px;
   font-size: 3.125rem;
   font-weight: 700;
@@ -3337,7 +3337,7 @@ svg {
 }
 
 .header-2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 700;
@@ -3345,7 +3345,7 @@ svg {
 }
 
 .header-3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 700;
@@ -3353,7 +3353,7 @@ svg {
 }
 
 .body-1 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 20px;
   font-size: 1.25rem;
   font-weight: 400;
@@ -3361,7 +3361,7 @@ svg {
 }
 
 .body-2 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 18px;
   font-size: 1.125rem;
   font-weight: 400;
@@ -3369,7 +3369,7 @@ svg {
 }
 
 .body-3 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 400;
@@ -3377,7 +3377,7 @@ svg {
 }
 
 .body-4 {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 14px;
   font-size: 0.875rem;
   font-weight: 400;
@@ -3400,7 +3400,7 @@ svg {
 }
 
 .button-2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   display: inline-block;
@@ -3463,6 +3463,11 @@ svg text {
 
 .z-10 {
   z-index: 10;
+}
+
+.bg-element svg {
+  width: auto;
+  height: auto;
 }
 
 header {
@@ -3687,7 +3692,7 @@ header .social-nav-ul svg {
 }
 
 .index-team .index-team-ul .each:before {
-  content: '';
+  content: "";
   display: inline-block;
   width: calc(100% - 40px);
   height: 100%;
@@ -3868,7 +3873,7 @@ header .social-nav-ul svg {
   counter-increment: number;
   content: counter(number) " ";
   display: inline-block;
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 16px;
   font-size: 1rem;
   font-weight: 700;
@@ -3892,7 +3897,7 @@ header .social-nav-ul svg {
   padding-left: 0.9375rem;
 }
 .suss-main .play-btn {
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 22px;
   font-size: 1.375rem;
   font-weight: 800;
@@ -4246,7 +4251,7 @@ header .social-nav-ul svg {
   padding-left: 0.9375rem;
 }
 .third-stage-con .inner .right-con .copy ul li:before {
-  content: '\2022';
+  content: "•";
   color: #003049;
   display: inline-block;
   width: 1em;
@@ -4296,9 +4301,6 @@ header .social-nav-ul svg {
   left: 0;
   bottom: 0;
 }
-.third-stage-con .svg-bg2 svg {
-  height: 100%;
-}
 .third-stage-con .svg-bg3 {
   position: absolute;
   right: 100px;
@@ -4317,8 +4319,8 @@ header .social-nav-ul svg {
   position: absolute;
   left: -350px;
   left: -21.875rem;
-  bottom: -250px;
-  bottom: -15.625rem;
+  bottom: -40px;
+  bottom: -2.5rem;
 }
 .third-stage-con .svg-bg6 {
   position: absolute;
@@ -4353,11 +4355,15 @@ header .social-nav-ul svg {
   background-color: #003049;
   width: 61%;
   height: 100vh;
+  overflow: hidden;
   z-index: 1;
 }
 .fifth-section-con .inner {
   position: relative;
   z-index: 2;
+}
+.fifth-section-con .left-con {
+  height: 100%;
 }
 .fifth-section-con .right-con {
   display: -ms-flexbox;
@@ -4445,7 +4451,7 @@ header .social-nav-ul svg {
   margin-right: 0;
 }
 .fifth-section-con .question-list .each-answer.active p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   font-size: 1.5rem;
   font-weight: 600;
@@ -4483,6 +4489,39 @@ header .social-nav-ul svg {
   height: 0.8125rem;
   margin-left: auto;
   margin-right: auto;
+}
+.fifth-section-con .svg-bg1 {
+  position: absolute;
+  left: 0;
+  bottom: -80px;
+  bottom: -5rem;
+}
+.fifth-section-con .svg-bg2 {
+  position: absolute;
+  left: 80px;
+  left: 5rem;
+  bottom: 0;
+}
+.fifth-section-con .svg-bg3 {
+  position: absolute;
+  left: 20px;
+  left: 1.25rem;
+  bottom: 370px;
+  bottom: 23.125rem;
+}
+.fifth-section-con .svg-bg4 {
+  position: absolute;
+  right: -20px;
+  right: -1.25rem;
+  top: 150px;
+  top: 9.375rem;
+}
+.fifth-section-con .svg-bg5 {
+  position: absolute;
+  left: 100px;
+  left: 6.25rem;
+  top: -110px;
+  top: -6.875rem;
 }
 
 .sixth-stage-con .left-bg {
@@ -18840,14 +18879,14 @@ body.nooverflow {
 }
 
 .mfp-arrow:after, .mfp-arrow:before, .mfp-container:before, .mfp-figure:after {
-  content: '';
+  content: "";
 }
 
 .mfp-bg {
   z-index: 999999991042;
   overflow: hidden;
   background: #fff;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .mfp-wrap {
@@ -18926,7 +18965,7 @@ body.nooverflow {
   top: 50%;
   width: auto;
   text-align: center;
-  margin-top: -.8em;
+  margin-top: -0.8em;
   left: 8px;
   right: 8px;
   z-index: 999999991044;
@@ -18979,11 +19018,11 @@ button::-moz-focus-inner {
   top: 0;
   text-decoration: none;
   text-align: center;
-  opacity: .65;
+  opacity: 0.65;
   padding: 0 0 18px 10px;
   font-style: normal;
   font-size: 28px;
-  font-family: Arial,Baskerville,monospace;
+  font-family: Arial, Baskerville, monospace;
 }
 
 .mfp-close:focus, .mfp-close:hover {
@@ -19022,7 +19061,7 @@ button::-moz-focus-inner {
 
 .mfp-arrow {
   position: absolute;
-  opacity: .65;
+  opacity: 0.65;
   margin: -55px 0 0;
   top: 50%;
   padding: 0;
@@ -19060,7 +19099,7 @@ button::-moz-focus-inner {
 .mfp-arrow:before {
   border-top-width: 21px;
   border-bottom-width: 21px;
-  opacity: .7;
+  opacity: 0.7;
 }
 
 .mfp-arrow-left {
