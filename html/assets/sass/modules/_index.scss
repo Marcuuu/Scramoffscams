@@ -1285,6 +1285,19 @@ header {
     }
 }
 
+.full-message-con {
+    position: relative;
+    background-color: #FFF9F0;
+    border: rem(5) solid #003049;
+    border-radius: rem(5);
+    padding: rem(50);
+    max-width: rem(500);
+    margin:{
+        left: auto;
+        right: auto;
+    }
+}
+
 .sixth-stage-complete {
     .final-btn {
         font:{
