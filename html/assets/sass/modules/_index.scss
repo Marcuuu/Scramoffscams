@@ -352,6 +352,8 @@ header {
 }
 
 .index-main-banner {
+    display: flex;
+    align-items: center;
     .index-main-banner-inner {
         display: flex;
         align-items: center;

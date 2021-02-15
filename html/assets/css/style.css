@@ -3586,6 +3586,12 @@ header .social-nav-ul svg {
   background-color: #003049;
 }
 
+.index-main-banner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+}
 .index-main-banner .index-main-banner-inner {
   display: -ms-flexbox;
   display: flex;
