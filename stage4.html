@@ -15,9 +15,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Nunito+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/aos.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="html/assets/vendor.js" type="text/javascript"></script>
+    <script src="assets/aos.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -68,9 +70,9 @@
 
     <section class="fourth-section-con main-section background-yellow">
         <div class="container">
-            <div class="header-con text-center max-350">
-                <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20">Stage #4</h3>
-                <p class="body-2 color-blue">Can you spot the imposter with the mask? Search hard and click on the imposter to suss em’ out!</p>
+            <div class="header-con text-center max-350 pt-40">
+                <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20" data-aos="fade-down">Stage #4</h3>
+                <p class="body-2 color-blue" data-aos="fade-up" data-aos-delay="300">Can you spot the imposter with the mask? Search hard and click on the imposter to suss em’ out!</p>
             </div>
         </div>
         <div class="relative">
@@ -103,6 +105,11 @@
         }
 
         $(function() {
+            AOS.init({
+                easing: 'ease-in-out',
+                duration: 800
+            })
+
             topMargin()
 
             $("area").on("click", function(e) {

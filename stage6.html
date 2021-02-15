@@ -15,10 +15,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Nunito+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/aos.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="html/assets/vendor.js" type="text/javascript"></script>
     <script src="assets/wheel.js"></script>
+    <script src="assets/aos.js" type="text/javascript"></script>
 </head>
 
 <body class="nooverflow">
@@ -72,7 +74,7 @@
         <div class="right-bg"></div>
         <div class="container inner" style="height:100%;">
             <div class="cf" style="height:100%;">
-                <div class="left-con relative col-5 pl-0" style="height:100%;">
+                <div class="left-con relative col-5 pl-0 pt-40" style="height:100%;">
                     <div class="svg-bg1 bg-element z-1">
                         <svg xmlns="http://www.w3.org/2000/svg" width="358.394" height="360.793" viewBox="0 0 358.394 360.793">
                             <path id="Path_625" data-name="Path 625"
@@ -224,18 +226,18 @@
                             </g>
                         </svg>
                     </div>
-                    <div class="header-con relative z-10 pt-40">
-                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20">Stage #6</h3>
-                        <p class="body-2 color-blue pr-90">Let's spin the wheel to seal the deal and ensure we don't become a scammer's meal!</p>
+                    <div class="header-con relative z-10">
+                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20" data-aos="fade-right">Stage #6</h3>
+                        <p class="body-2 color-blue pr-90" data-aos="fade-right" data-aos-delay="300">Let's spin the wheel to seal the deal and ensure we don't become a scammer's meal!</p>
                     </div>
                 </div>
                 <div class="right-con col-7" style="height:100%;">
                     <div class="relative" style="width:560px;height:560px;">
-                        <canvas id="wheel"></canvas>
-                        <div class="play-btn">
+                        <canvas id="wheel" data-aos="zoom-out" data-aos-delay="300"></canvas>
+                        <div class="play-btn default">
                             <p class="header-3 color-white uppercase bold-600">I will<br> protecc<br> my fam<br> by</p>
                         </div>
-                        <svg xmlns="http://www.w3.org/2000/svg" width="47.998" height="73.51" viewBox="0 0 47.998 73.51" class="svg-arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="47.998" height="73.51" viewBox="0 0 47.998 73.51" class="svg-arrow default">
                             <path id="Path_626" data-name="Path 626"
                                 d="M1345.174,1566.885q-.534,0-1.061.023c-15.565.7-24.948,17.658-17.851,31.528l18.912,36.959,18.912-36.959c7.1-13.87-2.286-30.826-17.85-31.528Q1345.708,1566.885,1345.174,1566.885Z"
                                 transform="translate(-1321.175 -1564.385)" fill="#f78002" stroke="#003049" stroke-linecap="round"
@@ -312,6 +314,11 @@
         }
 
         $(function() {
+            AOS.init({
+                easing: 'ease-in-out',
+                duration: 800
+            })
+
             topMargin()
 
             var settings = {
@@ -324,6 +331,8 @@
             var wheel = new Wheel(settings)
 
             wheel.init()
+
+            $(".sixth-stage-con .right-con .play-btn").addClass("animate-it")
 
             $(".sixth-stage-con .right-con .play-btn").on("click", function() {
                 wheel.spin(function(member) {
@@ -404,6 +413,8 @@
                     }
                 })
             })
+
+            $(".sixth-stage-con .right-con .svg-arrow").attr("class", "svg-arrow default animate-it")
 
             $(".to-complete-btn").on("click", function(e) {
                 e.preventDefault()

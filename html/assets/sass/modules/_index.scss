@@ -1248,6 +1248,18 @@ header {
             justify-content: center;
             text-align: center;
             cursor: pointer;
+            opacity: 0;
+            transition-property: opacity, transform;
+            transition-duration: 0.8s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.3s;
+            &.default {
+                transform: translate(-50%, -50%) scale(1.2);
+            }
+            &.animate-it {
+                opacity: 1;
+                transform: translateZ(0) translate(-50%, -50%) scale(1);
+            }
         }
         .svg-arrow {
             position: absolute;
@@ -1255,6 +1267,18 @@ header {
             left: 50%;
             transform: translateX(-50%);
             width: fit-content;
+            opacity: 0;
+            transition-property: opacity, transform;
+            transition-duration: 0.8s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.3s;
+            &.default {
+                transform: translateX(-50%) scale(1.2);
+            }
+            &.animate-it {
+                opacity: 1;
+                transform: translateZ(0) translateX(-50%) scale(1);
+            }
         }
     }
     .svg-bg1 {

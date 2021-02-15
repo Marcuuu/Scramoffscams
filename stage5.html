@@ -15,10 +15,12 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Nunito+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/aos.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="html/assets/vendor.js" type="text/javascript"></script>
     <script src="./assets/t.min.js"></script>
+    <script src="assets/aos.js" type="text/javascript"></script>
 </head>
 
 <body class="nooverflow">
@@ -103,7 +105,7 @@
         </div>
         <div class="container inner" style="height:100%;">
             <div class="cf" style="height:100%;">
-                <div class="left-con relative col-5 pl-0">
+                <div class="left-con relative col-5 pl-0 pt-40">
                   <div class="svg-bg1 bg-element z-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="351.445" height="354.059" viewBox="0 0 351.445 354.059">
                       <path id="Path_251" data-name="Path 251"
@@ -195,13 +197,13 @@
                       </g>
                     </svg>
                   </div>
-                  <div class="header-con relative z-10 pt-40">
-                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20">Stage #5</h3>
-                        <p class="body-2 color-blue pr-90">Do you stand a chance against scammers? Take this quiz to check if you're at risk of being scammed!</p>
+                  <div class="header-con relative z-10">
+                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20" data-aos="fade-right">Stage #5</h3>
+                        <p class="body-2 color-blue pr-90" data-aos="fade-right" data-aos-delay="300">Do you stand a chance against scammers? Take this quiz to check if you're at risk of being scammed!</p>
                     </div>
                 </div>
                 <div class="right-con col-7" style="height:100%;">
-                    <ul class="question-list">
+                    <ul class="question-list" data-aos="zoom-out" data-aos-delay="300">
                         <li class="each text-center" id="1">
                             <div class="question">
                                 <h2 class="header-2 color-blue bold-600">You receive a new follower request on Instagram from an old friend. What will you do?</h2>
@@ -468,6 +470,11 @@
         }
 
         $(function() {
+            AOS.init({
+                easing: 'ease-in-out',
+                duration: 800
+            })
+
             topMargin()
 
             $(".fifth-section-con .question-list .each-answer").on("click", function() {

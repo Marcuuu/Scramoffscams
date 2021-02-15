@@ -15,9 +15,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Nunito+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/aos.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="html/assets/vendor.js" type="text/javascript"></script>
+    <script src="assets/aos.js" type="text/javascript"></script>
 </head>
 
 <body class="nooverflow">
@@ -170,8 +172,8 @@
                     </svg>
                 </div>
                 <div class="text-center relative z-10 max-400">
-                    <h1 class="header-1 color-blue bold mb-30">Welcome to<br>Suss &lsquo;Em Out!</h1>
-                    <a href="stage1.html" class="play-btn">Push<br>Start</a>
+                    <h1 class="header-1 color-blue bold mb-30" data-aos="fade-down">Welcome to<br>Suss &lsquo;Em Out!</h1>
+                    <a href="stage1.html" class="play-btn" data-aos="zoom-out" data-aos-delay="800">Push<br>Start</a>
                 </div>
             </div>
             <div class="each right-con relative z-10 col-6 pl-0 pr-0">
@@ -201,7 +203,7 @@
                         </g>
                     </svg>
                 </div>
-                <div class="relative bg-element z-10">
+                <div class="relative bg-element z-10" data-aos="fade-up" data-aos-delay="300">
                     <svg xmlns="http://www.w3.org/2000/svg" width="522.638" height="703.671" viewBox="0 0 522.638 703.671">
                         <g id="Group_523" data-name="Group 523" transform="translate(1866.5 -5135)">
                             <rect id="Rectangle_205" data-name="Rectangle 205" width="452.933" height="424.796"
@@ -390,6 +392,11 @@
     }
 
     $(function () {
+        AOS.init({
+            easing: 'ease-in-out',
+            duration: 800
+        })
+        
         topMargin()
         calcHeight()
     })

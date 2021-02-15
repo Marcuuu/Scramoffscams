@@ -15,9 +15,11 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Nunito+Sans:wght@400;600;700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="./assets/aos.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="html/assets/vendor.js" type="text/javascript"></script>
+    <script src="assets/aos.js" type="text/javascript"></script>
 </head>
 
 <body class="nooverflow">
@@ -191,8 +193,8 @@
                         </svg>
                     </div>
                     <div class="header-con relative z-10">
-                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20">Stage #3</h3>
-                        <p class="body-2 color-blue pr-100">Look at the following pictures and try to suss out the fake account by clicking on it!</p>
+                        <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20" data-aos="fade-right">Stage #3</h3>
+                        <p class="body-2 color-blue pr-100" data-aos="fade-right" data-aos-delay="300">Look at the following pictures and try to suss out the fake account by clicking on it!</p>
                     </div>
                 </div>
                 <div class="right-con cf col-7 pr-0" style="height:100%;">
@@ -201,7 +203,7 @@
                             <div class="inner relative">
                                 <div class="svg-con">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="309.795" height="516.795"
-                                        viewBox="0 0 309.795 516.795">
+                                        viewBox="0 0 309.795 516.795" data-aos="fade-up" data-aos-delay="300">
                                         <defs>
                                             <clipPath id="clip-path">
                                                 <path id="Rectangle_154" data-name="Rectangle 154"
@@ -556,7 +558,7 @@
                             <div class="inner relative">
                                 <div class="svg-con">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="309.795" height="516.795"
-                                        viewBox="0 0 309.795 516.795">
+                                        viewBox="0 0 309.795 516.795" data-aos="fade-up" data-aos-delay="600">
                                         <defs>
                                             <clipPath id="clip-path-12">
                                                 <path id="Rectangle_180" data-name="Rectangle 180"
@@ -890,6 +892,11 @@
         }
 
         $(function() {
+            AOS.init({
+                easing: 'ease-in-out',
+                duration: 800
+            })
+
             topMargin()
 
             $(".third-stage-con .inner .right-con .each").on("mouseover", function() {

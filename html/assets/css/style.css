@@ -4607,6 +4607,19 @@ header .social-nav-ul svg {
   justify-content: center;
   text-align: center;
   cursor: pointer;
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.3s;
+}
+.sixth-stage-con .right-con .play-btn.default {
+  -ms-transform: translate(-50%, -50%) scale(1.2);
+  transform: translate(-50%, -50%) scale(1.2);
+}
+.sixth-stage-con .right-con .play-btn.animate-it {
+  opacity: 1;
+  transform: translateZ(0) translate(-50%, -50%) scale(1);
 }
 .sixth-stage-con .right-con .svg-arrow {
   position: absolute;
@@ -4617,6 +4630,19 @@ header .social-nav-ul svg {
   transform: translateX(-50%);
   width: -webkit-fit-content;
   width: fit-content;
+  opacity: 0;
+  transition-property: opacity, transform;
+  transition-duration: 0.8s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0.3s;
+}
+.sixth-stage-con .right-con .svg-arrow.default {
+  -ms-transform: translateX(-50%) scale(1.2);
+  transform: translateX(-50%) scale(1.2);
+}
+.sixth-stage-con .right-con .svg-arrow.animate-it {
+  opacity: 1;
+  transform: translateZ(0) translateX(-50%) scale(1);
 }
 .sixth-stage-con .svg-bg1 {
   position: absolute;
