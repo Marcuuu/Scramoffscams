@@ -3931,6 +3931,10 @@ header .social-nav-ul svg {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  transition: opacity 0.8s, transform 0.8s, background-color 0.15s !important;
+}
+.suss-main .play-btn:hover {
+  background-color: #802323;
 }
 .suss-main .svg-bg1 {
   position: absolute;
@@ -4077,7 +4081,7 @@ header .social-nav-ul svg {
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 55%;
+  width: 63%;
 }
 .second-stage-con .response-con input {
   width: 100%;
@@ -4111,12 +4115,16 @@ header .social-nav-ul svg {
   -ms-flex-pack: center;
   justify-content: center;
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
 }
 .second-stage-con .response-con .continue-btn svg {
   width: 13px;
   width: 0.8125rem;
   height: 13px;
   height: 0.8125rem;
+}
+.second-stage-con .response-con .continue-btn:hover {
+  background-color: #802323;
 }
 .second-stage-con .svg-bg1 {
   position: absolute;
@@ -4280,6 +4288,10 @@ header .social-nav-ul svg {
 .third-stage-con .inner .right-con .next-con p {
   display: inline-block;
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+.third-stage-con .inner .right-con .next-con p:hover {
+  color: #EAB141;
 }
 .third-stage-con .inner .right-con .next-con button {
   width: 35px;
@@ -4291,6 +4303,7 @@ header .social-nav-ul svg {
   margin-left: 5px;
   margin-left: 0.3125rem;
   cursor: pointer;
+  transition: all 0.15s ease-in-out;
 }
 .third-stage-con .inner .right-con .next-con button svg {
   width: 13px;
@@ -4299,6 +4312,9 @@ header .social-nav-ul svg {
   height: 0.8125rem;
   margin-left: auto;
   margin-right: auto;
+}
+.third-stage-con .inner .right-con .next-con button:hover {
+  background-color: #EAB141;
 }
 .third-stage-con .svg-bg1 {
   position: absolute;
@@ -4468,6 +4484,9 @@ header .social-nav-ul svg {
   font-weight: 600;
   line-height: 1;
 }
+.fifth-section-con .question-list .each-answer:hover {
+  background-color: #dfdad3;
+}
 .fifth-section-con .endings {
   opacity: 0;
   pointer-events: none;
@@ -4608,10 +4627,7 @@ header .social-nav-ul svg {
   text-align: center;
   cursor: pointer;
   opacity: 0;
-  transition-property: opacity, transform;
-  transition-duration: 0.8s;
-  transition-timing-function: ease-in-out;
-  transition-delay: 0.3s;
+  transition: opacity 0.8s ease-in-out 0.3s, transform 0.8s ease-in-out 0.3s, background-color 0.15s ease-in-out 0s;
 }
 .sixth-stage-con .right-con .play-btn.default {
   -ms-transform: translate(-50%, -50%) scale(1.2);
@@ -4620,6 +4636,9 @@ header .social-nav-ul svg {
 .sixth-stage-con .right-con .play-btn.animate-it {
   opacity: 1;
   transform: translateZ(0) translate(-50%, -50%) scale(1);
+}
+.sixth-stage-con .right-con .play-btn:hover {
+  background-color: #802323;
 }
 .sixth-stage-con .right-con .svg-arrow {
   position: absolute;

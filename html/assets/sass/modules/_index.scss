@@ -653,6 +653,10 @@ header {
             left: auto;
             right: auto;
         }
+        transition: opacity 0.8s, transform 0.8s, background-color 0.15s !important;
+        &:hover {
+            background-color: #802323;
+        }
     }
     .svg-bg1 {
         position: absolute;
@@ -779,7 +783,7 @@ header {
         bottom: rem(30);
         left: 50%;
         transform: translateX(-50%);
-        width: 55%;
+        width: 63%;
         input {
             width: 100%;
             padding: rem(12) rem(20);
@@ -803,9 +807,13 @@ header {
             align-items: center;
             justify-content: center;
             cursor: pointer;
+            transition: all 0.15s ease-in-out;
             svg {
                 width: rem(13);
                 height: rem(13);
+            }
+            &:hover {
+                background-color: #802323;
             }
         }
     }
@@ -951,6 +959,10 @@ header {
                 p {
                     display: inline-block;
                     cursor: pointer;
+                    transition: all 0.15s ease-in-out;
+                    &:hover {
+                        color: #EAB141;
+                    }
                 }
                 button {
                     width: rem(35);
@@ -961,6 +973,7 @@ header {
                         left: rem(5);
                     }
                     cursor: pointer;
+                    transition: all 0.15s ease-in-out;
                     svg {
                         width: rem(13);
                         height: rem(13);
@@ -968,6 +981,9 @@ header {
                             left: auto;
                             right: auto;
                         }
+                    }
+                    &:hover {
+                        background-color: #EAB141;
                     }
                 }
             }
@@ -1126,6 +1142,9 @@ header {
                     line-height: 1;
                 }
             }
+            &:hover {
+                background-color: #dfdad3;
+            }
         }
     }
     .endings {
@@ -1249,16 +1268,16 @@ header {
             text-align: center;
             cursor: pointer;
             opacity: 0;
-            transition-property: opacity, transform;
-            transition-duration: 0.8s;
-            transition-timing-function: ease-in-out;
-            transition-delay: 0.3s;
+            transition: opacity 0.8s ease-in-out 0.3s, transform 0.8s ease-in-out 0.3s, background-color 0.15s ease-in-out 0s;
             &.default {
                 transform: translate(-50%, -50%) scale(1.2);
             }
             &.animate-it {
                 opacity: 1;
                 transform: translateZ(0) translate(-50%, -50%) scale(1);
+            }
+            &:hover {
+                background-color: #802323;
             }
         }
         .svg-arrow {
