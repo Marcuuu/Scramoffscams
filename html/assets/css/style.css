@@ -3936,14 +3936,14 @@ header .social-nav-ul svg {
 }
 .suss-main .play-btn {
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 22px;
-  font-size: 1.375rem;
+  font-size: 28px;
+  font-size: 1.75rem;
   font-weight: 800;
   line-height: 1;
-  width: 120px;
-  width: 7.5rem;
-  height: 120px;
-  height: 7.5rem;
+  width: 150px;
+  width: 9.375rem;
+  height: 150px;
+  height: 9.375rem;
   border: 4px solid #003049;
   border: 0.25rem solid #003049;
   border-radius: 50%;
@@ -4751,6 +4751,25 @@ header .social-nav-ul svg {
   border: 0.3125rem solid #003049;
   border-radius: 5px;
   border-radius: 0.3125rem;
+}
+
+.finish-con {
+  position: relative;
+  background-color: #FFF9F0;
+  border: 5px solid #003049;
+  border: 0.3125rem solid #003049;
+  border-radius: 5px;
+  border-radius: 0.3125rem;
+  padding: 50px;
+  padding: 3.125rem;
+  max-width: 500px;
+  max-width: 31.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.finish-con p {
+  margin-bottom: 0;
 }
 
 .coming-soon-con {
