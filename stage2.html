@@ -263,7 +263,7 @@
                         <div class="response-con">
                             <form action="#">
                                 <input name="" id="" cols="30" rows="10" placeholder="Message" class="body-3 color-blue"></input>
-                                <button type="submit" class="continue-btn">
+                                <button type="submit" class="continue-btn disabled">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="5.784" height="9.569" viewBox="0 0 5.784 9.569">
                                         <path id="Path_131" data-name="Path 131" d="M342.637,1333.109l3.37,3.37-3.37,3.37"
                                         transform="translate(-341.222 -1331.695)" fill="none" stroke="#fff"  stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
@@ -306,16 +306,27 @@
         $(".second-stage-con .response-con form").on("submit", function(e) {
             e.preventDefault()
 
-            $.magnificPopup.open({
-                showCloseBtn: false,
-                closeOnBgClick: false,
-                enableEscapeKey: false,
-                mainClass: 'mfp-fade',
-                items: {
-                    src: '#complete-con',
-                    type: 'inline'
-                }
-            })
+            if (!$(this).find(".continue-btn").hasClass("disabled")) {
+                $.magnificPopup.open({
+                    showCloseBtn: false,
+                    closeOnBgClick: false,
+                    enableEscapeKey: false,
+                    mainClass: 'mfp-fade',
+                    items: {
+                        src: '#complete-con',
+                        type: 'inline'
+                    }
+                })
+            }
+        })
+
+        $(".second-stage-con .response-con input").on("keyup", function() {
+            if ($(this).val().length > 0) {
+                $(this).next().removeClass("disabled")
+            }
+            else {
+                $(this).next().addClass("disabled")
+            }
         })
     })
 

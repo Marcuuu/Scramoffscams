@@ -663,7 +663,7 @@
                     </svg>
                 </div>
                 <div class="index-team-inner relative z-10">
-                    <div class="header-con text-center" data-aos="fade-down" data-aos-anchor-placement="top-center">
+                    <div class="header-con text-center" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-offset="-200">
                         <h3 class="header-3 color-blue rounded border-blue uppercase bold">The team</h3>
                         <p class="body-3 color-blue mt-20">The brains behind this campaign<br>and their social media
                             habits
@@ -671,7 +671,7 @@
                     </div>
                 </div>
                 <ul class="index-team-ul relative z-10 cf mt-40">
-                    <li class="each col-3" data-aos="fade-up" data-aos-anchor="#partners">
+                    <li class="each col-3" data-aos="fade-up" data-aos-anchor="#partners" data-aos-offset="-200">
                         <div class="inner background-lightblue relative">
                             <div class="image-con">
                                 <img src="./assets/team-chowxinyi.jpg" alt="" class="image">
@@ -687,7 +687,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="each col-3" data-aos="fade-up" data-aos-anchor="#partners" data-aos-delay="300">
+                    <li class="each col-3" data-aos="fade-up" data-aos-anchor="#partners" data-aos-delay="300" data-aos-offset="-200">
                         <div class="inner background-darkyellow relative">
                             <div class="image-con">
                                 <img src="./assets/team-kirstylim.jpg" alt="" class="image">
@@ -704,7 +704,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="each col-3" data-aos="fade-up" data-aos-anchor="#partners" data-aos-delay="600">
+                    <li class="each col-3" data-aos="fade-up" data-aos-anchor="#partners" data-aos-delay="600" data-aos-offset="-200">
                         <div class="inner background-red relative">
                             <div class="image-con">
                                 <img src="./assets/team-prissietan.jpg" alt="" class="image">
@@ -721,7 +721,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="each col-3" data-aos="fade-up" data-aos-anchor="#partners" data-aos-delay="900">
+                    <li class="each col-3" data-aos="fade-up" data-aos-anchor="#partners" data-aos-delay="900" data-aos-offset="-200">
                         <div class="inner background-orange relative">
                             <div class="image-con">
                                 <img src="./assets/team-teresayap.jpg" alt="" class="image">
@@ -790,13 +790,13 @@
                                 transform="translate(-914.02 1777.936) rotate(-97)" fill="#8bd3e3" />
                         </svg>
                     </div>
-                    <div class="header-con relative z-10 text-center" data-aos="fade-down" data-aos-anchor-placement="top-center">
+                    <div class="header-con relative z-10 text-center" data-aos="fade-down" data-aos-anchor-placement="top-center" data-aos-offset="-200">
                         <h3 class="header-3 color-blue bold rounded uppercase">Our Partners</h3>
                         <p class="body-3 color-blue max-350 mt-20">It's 4 of us against the world. Tackling this issue
                             would not
                             have been possible without:</p>
                     </div>
-                    <div class="relative z-10 mt-60" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="relative z-10 mt-60" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-200">
                         <div class="text-center">
                             <p class="body-2 color-blue">Supported by:</p>
                         </div>
@@ -814,7 +814,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="relative z-10 mt-60" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="relative z-10 mt-60" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-200">
                         <div class="text-center">
                             <p class="body-2 color-blue">Sponsored by:</p>
                         </div>
@@ -840,7 +840,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class="relative z-10 mt-60" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                    <div class="relative z-10 mt-60" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-offset="-200">
                         <div class="text-center">
                             <p class="body-2 color-blue">Supported by:</p>
                         </div>
@@ -932,7 +932,8 @@
                         $.cookie('visit', 'expires_seven_days')
                         AOS.init({
                             easing: 'ease-in-out',
-                            duration: 800
+                            duration: 600,
+                            once: true
                         })
                     }
                 }
@@ -941,7 +942,8 @@
         else {
             AOS.init({
                 easing: 'ease-in-out',
-                duration: 800
+                duration: 600,
+                once: true
             })
         }
     }

@@ -4144,6 +4144,10 @@ header .social-nav-ul svg {
   cursor: pointer;
   transition: all 0.15s ease-in-out;
 }
+.second-stage-con .response-con .continue-btn.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
 .second-stage-con .response-con .continue-btn svg {
   width: 13px;
   width: 0.8125rem;
