@@ -27,7 +27,7 @@
     <header class="background-yellow">
         <div class="container">
             <div class="header-inner cf">
-                <div class="logo">
+                <div class="logo"> 
                     <a href="/">
                         <img src="/assets/logo.png" alt="" class="image">
                     </a>
@@ -75,17 +75,17 @@
     </div>
     <div class="scroller z-10">
         <ul class="scroller-ul">
-            <li class="each active"></li>
-            <li class="each"></li>
-            <li class="each"></li>
-            <li class="each"></li>
-            <li class="each"></li>
-            <li class="each"></li>
+            <li class="each active" data-section="main-banner"></li>
+            <li class="each" data-section="who"></li>
+            <li class="each" data-section="what"></li>
+            <li class="each" data-section="team"></li>
+            <li class="each" data-section="partners"></li>
+            <li class="each" data-section="contact-section"></li>
         </ul>
     </div>
     <div class="main-section">
         <section
-            class="index-main-banner background-yellow desktop-pt-80 desktop-pb-200">
+            class="index-main-banner background-yellow desktop-pt-80 desktop-pb-200" id="main-banner">
             <div class="container">
                 <div class="index-main-banner-inner cf">
                     <div class="image-con col-12 col-tablet-6 col-desktop-6">
@@ -355,7 +355,7 @@
                 </div>
             </div>
         </section>
-        <section class="index-who background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80">
+        <section class="index-who background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80" id="who">
             <div class="container">
                 <div class="index-who-inner cf">
                     <div class="image-con col-6" data-aos="fade-right" data-aos-anchor-placement="center-center">
@@ -373,7 +373,7 @@
                 </div>
             </div>
         </section>
-        <section class="index-what background-blue pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80">
+        <section class="index-what background-blue pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80" id="what">
             <div class="container">
                 <div class="index-what-inner cf">
                     <div class="text-con relative col-6">
@@ -646,7 +646,7 @@
                 </div>
             </div>
         </section>
-        <section class="index-team background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80">
+        <section class="index-team background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80" id="team">
             <div class="container relative">
                 <div class="svg-bg1 bg-element z-1">
                     <svg xmlns="http://www.w3.org/2000/svg" width="211.981" height="213.558" viewBox="0 0 211.981 213.558">
@@ -741,7 +741,7 @@
             </div>
         </section>
         <section
-            class="index-partners background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80">
+            class="index-partners background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80" id="partners">
             <div class="container">
                 <div class="index-partners-inner relative">
                     <div class="svg-bg1 bg-element z-1">
@@ -1016,6 +1016,13 @@
             e.preventDefault()
             $("html, body").animate({
                 scrollTop: $("#contact-section").offset().top
+            }, 700)
+        })
+
+        $(".scroller .each").on("click", function() {
+            let section = $(this).attr("data-section")
+            $("html, body").animate({
+                scrollTop: $("#" + section).offset().top
             }, 700)
         })
     })

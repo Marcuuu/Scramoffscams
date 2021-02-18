@@ -194,6 +194,10 @@ svg {
     border: rem(3) solid #003049;
     border-radius: rem(200);
     padding: rem(10) rem(35);
+    transition: all 0.15s ease-in-out;
+    &:hover {
+        background-color: #00283b;
+    }
 }
 
 .rounded {
@@ -288,10 +292,18 @@ header {
                 }
             }
             a {
+                transition: all 0.15s ease-in-out;
                 &.active {
                     border: rem(3) solid;
                     border-radius: rem(200);
                     padding: rem(5) rem(10);
+                }
+                &:hover {
+                    color: #00283b;
+                    border-color: #00283b;
+                    svg {
+                        fill: #00283b;
+                    }
                 }
             }
         }
@@ -340,6 +352,7 @@ header {
         height: rem(12);
         border: rem(3) solid #003049;
         border-radius: 50%;
+        cursor: pointer;
         &:not(:first-child) {
             margin:{
                 top: rem(10);
@@ -564,6 +577,28 @@ header {
                     right: auto;
                 }
                 fill: #003049;
+            }
+        }
+        .text-con {
+            p {
+                transition: all 0.15s ease-in-out;
+            }
+        }
+        li {
+            a {
+                &:hover {
+                    svg {
+                        fill: #00283b;
+                    }
+                    .text-con {
+                        p {
+                            color: #00283b !important;
+                        }
+                    }
+                }
+                svg {
+                    transition: all 0.15s ease-in-out;
+                }
             }
         }
     }
