@@ -804,7 +804,6 @@ header {
         justify-content: center;
         height: 100%;
         video {
-            width: rem(500);
             margin:{
                 left: auto;
                 right: auto;
@@ -818,7 +817,7 @@ header {
         bottom: rem(30);
         left: 50%;
         transform: translateX(-50%);
-        width: 63%;
+        width: 79%;
         input {
             width: 100%;
             padding: rem(12) rem(20);

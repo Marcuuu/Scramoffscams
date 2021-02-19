@@ -4092,8 +4092,6 @@ header .social-nav-ul svg {
   height: 100%;
 }
 .second-stage-con .right-con video {
-  width: 500px;
-  width: 31.25rem;
   margin-left: auto;
   margin-right: auto;
   max-height: 650px;
@@ -4108,7 +4106,7 @@ header .social-nav-ul svg {
   left: 50%;
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: 63%;
+  width: 79%;
 }
 .second-stage-con .response-con input {
   width: 100%;
