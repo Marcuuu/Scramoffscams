@@ -195,7 +195,7 @@
                     </div>
                     <div class="header-con relative max-400-no-auto z-10">
                         <h3 class="header-3 color-blue rounded border-blue uppercase bold mb-20" data-aos="fade-right">Stage #2</h3>
-                        <p class="body-2 color-blue" data-aos="fade-right" data-aos-delay="300">Read the text conversation on the right and respond in your own words!</p>
+                        <p class="body-2 color-blue" data-aos="fade-right" data-aos-delay="300">Read the text conversation on the right and type in your response in the chatbox provided!</p>
                     </div>
                 </div>
                 <div class="right-con relative col-6">
@@ -257,10 +257,13 @@
                         </svg>
                     </div>
                     <div class="relative z-10" data-aos="fade-up" data-aos-delay="300">
-                        <video autoplay="" muted playsinline preload="metadata">
+                        <video autoplay="" muted playsinline preload="metadata" class="video" onended="vidEnd()">
                             <source src="./assets/stage2-vid-new.mp4" type="video/mp4">
                         </video>
-                        <div class="response-con">
+                        <div class="response-con relative">
+                            <div class="tooltip">
+                              <p class="body-4 color-blue">Type your responses here!</p>
+                            </div>
                             <form action="#">
                                 <input name="" id="" cols="30" rows="10" placeholder="Message" class="body-3 color-blue"></input>
                                 <button type="submit" class="continue-btn disabled">
@@ -295,6 +298,11 @@
         })
     }
 
+    function vidEnd() {
+      $(".tooltip").addClass("active")
+      $(".video").addClass("ended")
+    }
+
     $(function() {
         AOS.init({
             easing: 'ease-in-out',
@@ -323,9 +331,19 @@
         $(".second-stage-con .response-con input").on("keyup", function() {
             if ($(this).val().length > 0) {
                 $(this).next().removeClass("disabled")
+                if ($(".video").hasClass("ended")) {
+                  if ($(".tooltip").hasClass("active")) {
+                    $(".tooltip").removeClass("active")
+                  }
+                }
             }
             else {
                 $(this).next().addClass("disabled")
+                if ($(".video").hasClass("ended")) {
+                  if (!$(".tooltip").hasClass("active")) {
+                    $(".tooltip").addClass("active")
+                  }
+                }
             }
         })
     })
