@@ -4161,6 +4161,20 @@ header .social-nav-ul svg {
 .second-stage-con .response-con .continue-btn:hover {
   background-color: #802323;
 }
+.second-stage-con .tooltip {
+  position: absolute;
+  bottom: 100%;
+  left: 20px;
+  left: 1.25rem;
+  width: -webkit-fit-content;
+  width: fit-content;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+.second-stage-con .tooltip.active {
+  bottom: 115%;
+  opacity: 1;
+}
 .second-stage-con .svg-bg1 {
   position: absolute;
   left: -230px;

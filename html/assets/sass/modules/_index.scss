@@ -859,6 +859,18 @@ header {
             }
         }
     }
+    .tooltip {
+      position: absolute;
+      bottom: 100%;
+      left: rem(20);
+      width: fit-content;
+      opacity: 0;
+      transition: all 0.3s ease-in-out;
+      &.active {
+        bottom: 115%;
+        opacity: 1;
+      }
+    }
     .svg-bg1 {
         position: absolute;
         left: rem(-230);
