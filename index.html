@@ -85,7 +85,7 @@
     </div>
     <div class="main-section">
         <section
-            class="index-main-banner background-yellow desktop-pt-80 desktop-pb-200" id="main-banner">
+            class="index-main-banner background-yellow desktop-pt-80 desktop-pb-150" id="main-banner">
             <div class="container">
                 <div class="index-main-banner-inner cf">
                     <div class="image-con col-12 col-tablet-6 col-desktop-6">
@@ -358,7 +358,7 @@
         <section class="index-who background-yellow pt-40 pb-40 tablet-pt-60 tablet-pb-60 desktop-pt-80 desktop-pb-80" id="who">
             <div class="container">
                 <div class="index-who-inner cf">
-                    <div class="image-con col-6" data-aos="fade-right" data-aos-anchor-placement="top-center">
+                    <!-- <div class="image-con col-6" data-aos="fade-right" data-aos-anchor-placement="top-center">
                         <img src="./assets/sos-logo_stacked.png" alt="" class="image">
                     </div>
                     <div class="text-con col-6" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="300">
@@ -369,6 +369,15 @@
                             four final year students from the Wee Kim Wee School of Communication and Information,
                             Nanyang
                             Technological University.</p>
+                    </div> -->
+                    <div class="index-who-content">
+                        <div data-aos="fade-right" data-aos-anchor-placement="top-center">
+                            <img src="./assets/sos-logo_stacked.png" alt="" class="image max-200">
+                        </div>
+                        <div class="max-450-no-auto pl-50" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-delay="300">
+                            <h3 class="header-3 color-blue rounded border-blue uppercase bold">Who are we?</h3>
+                            <p class="body-3 color-blue max-600-no-auto mt-20">Scram Off, Scams! is a non-profit communication campaign created by four final year students from the Wee Kim Wee School of Communication and Information, Nanyang Technological University.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -801,9 +810,9 @@
                             <p class="body-2 color-blue">Supported by:</p>
                         </div>
                         <ul class="partners-ul text-center cf max-700 mt-20">
-                            <li class="grid-2 mb-20">
+                            <li class="grid-2 mb-30">
                                 <img src="./assets/sos-sponsor9.png" alt="" class="image">
-                            </li><li class="grid-2 mb-20">
+                            </li><li class="grid-2 mb-30">
                                 <img src="./assets/sos-sponsor10.png" alt="" class="image">
                             </li><li class="grid-3">
                                 <img src="./assets/sos-sponsor12.png" alt="">
@@ -819,17 +828,17 @@
                             <p class="body-2 color-blue">Sponsored by:</p>
                         </div>
                         <ul class="partners-ul sponsored-ul text-center cf max-700 mt-20">
-                            <li class="grid-3 mb-20">
+                            <li class="grid-3 mb-30">
                                 <img src="./assets/sos-sponsor1.png" alt="" class="image">
-                            </li><li class="grid-3 mb-20">
+                            </li><li class="grid-3 mb-30">
                                 <img src="./assets/sos-sponsor2.png" alt="" class="image">
-                            </li><li class="grid-3 mb-20">
+                            </li><li class="grid-3 mb-30">
                                 <img src="./assets/sos-sponsor3.png" alt="" class="image">
-                            </li><li class="clear"></li><li class="grid-3 mb-20">
+                            </li><li class="clear"></li><li class="grid-3 mb-30">
                                 <img src="./assets/sos-sponsor4.png" alt="" class="image">
-                            </li><li class="grid-3 mb-20">
+                            </li><li class="grid-3 mb-30">
                                 <img src="./assets/sos-sponsor5.png" alt="" class="image">
-                            </li><li class="grid-3 mb-20">
+                            </li><li class="grid-3 mb-30">
                                 <img src="./assets/sos-sponsor6.png" alt="" class="image">
                             </li><li class="clear"></li><li class="grid-3">
                                 <img src="./assets/sos-sponsor7.png" alt="" class="image">
@@ -981,9 +990,24 @@
             let days = Math.floor(distance / (1000 * 60 * 60 * 24))
             let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
             let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60))
-            $("#main-countdown-con #days").html(days)
-            $("#main-countdown-con #hours").html(hours)
-            $("#main-countdown-con #mins").html(minutes)
+            if (days < 10) {
+                $("#main-countdown-con #days").html("0" + days)
+            }
+            else {
+                $("#main-countdown-con #days").html(days)
+            }
+            if (hours < 10) {
+                $("#main-countdown-con #hours").html("0" + hours)
+            }
+            else {
+                $("#main-countdown-con #hours").html(hours)
+            }
+            if (minutes < 10) {
+                $("#main-countdown-con #mins").html("0" + minutes)
+            }
+            else {
+                $("#main-countdown-con #mins").html(minutes)
+            }
         }, 1000)
     }
 
