@@ -55,7 +55,7 @@ return formatString.replace(placeholderRegex,value)}
  	});
  }
 
- function checkAdmin() {
+ function checkAdmin() { // cancel this
      let admin = $.cookie('admin')
      let query = window.location.search
      query = query.split('=')
@@ -71,7 +71,7 @@ return formatString.replace(placeholderRegex,value)}
      }
  }
 
- checkAdmin()
+//  checkAdmin() // cancel this
 
  $(function(){
      
