@@ -71,7 +71,7 @@ return formatString.replace(placeholderRegex,value)}
      }
  }
 
-//  checkAdmin() // cancel this
+ checkAdmin() // cancel this
 
  $(function(){
      
