@@ -55,23 +55,23 @@ return formatString.replace(placeholderRegex,value)}
  	});
  }
 
- function checkAdmin() { // cancel this
-     let admin = $.cookie('admin')
-     let query = window.location.search
-     query = query.split('=')
-     if (query[1] == 'test') {
-         $.cookie('admin', 'expires_seven_days')
-     }
-     else {
-         if (admin === null || admin === undefined) {
-             if (!window.location.pathname.includes("coming-soon")) {
-                window.location = '/coming-soon'
-             }
-         }
-     }
- }
+//  function checkAdmin() { // cancel this
+//      let admin = $.cookie('admin')
+//      let query = window.location.search
+//      query = query.split('=')
+//      if (query[1] == 'test') {
+//          $.cookie('admin', 'expires_seven_days')
+//      }
+//      else {
+//          if (admin === null || admin === undefined) {
+//              if (!window.location.pathname.includes("coming-soon")) {
+//                 window.location = '/coming-soon'
+//              }
+//          }
+//      }
+//  }
 
- checkAdmin() // cancel this
+//  checkAdmin() // cancel this
 
  $(function(){
      
