@@ -362,8 +362,7 @@
 
     <script>
         fbq('track', 'ViewContent');
-        fbq('track', 'Lead');
-
+    
         function topMargin() {
             let headerHeight = $("header").outerHeight()
             $(".main-section").css({
@@ -376,6 +375,7 @@
             let el = document.getElementById("typeform-embed")
             let reference = window.typeformEmbed.makeWidget(el, "https://fs80vj7pboj.typeform.com/to/rCOJUcuZ", {
                 onSubmit: function () {
+                    fbq('track', 'Lead');
                     $.magnificPopup.close()
                     setTimeout(function() {
                         $.magnificPopup.open({
