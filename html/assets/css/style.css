@@ -3555,6 +3555,10 @@ header .social-nav-ul svg {
   height: 18px;
   height: 1.125rem;
 }
+header .dropdown {
+  position: absolute;
+  top: 100%;
+}
 
 .index-body {
   overflow-x: hidden;

@@ -324,6 +324,10 @@ header {
             height: rem(18);
         }   
     }
+    .dropdown {
+        position: absolute;
+        top: 100%;
+    }
 }
 
 .index-body {
