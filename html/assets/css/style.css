@@ -3484,10 +3484,6 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding-top: 10px;
-  padding-top: 0.625rem;
-  padding-bottom: 10px;
-  padding-bottom: 0.625rem;
   z-index: 100;
 }
 header .header-inner {
@@ -3516,14 +3512,33 @@ header .main-nav-ul {
   margin-right: 30px;
   margin-right: 1.875rem;
 }
-header .main-nav-ul li:not(:last-child) {
+header .main-nav-ul .parent {
+  padding-top: 20px;
+  padding-top: 1.25rem;
+  padding-bottom: 20px;
+  padding-bottom: 1.25rem;
+}
+header .main-nav-ul .parent:not(:last-child) {
   margin-right: 30px;
   margin-right: 1.875rem;
 }
-header .main-nav-ul li a {
+header .main-nav-ul .parent.has-children:hover > .parent-link svg {
+  -ms-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
+}
+header .main-nav-ul .parent.has-children:hover > .dropdown {
+  opacity: 1;
+  pointer-events: all;
+}
+header .main-nav-ul .parent.has-children .parent-link {
+  padding-right: 30px !important;
+  padding-right: 1.875rem !important;
+}
+header .main-nav-ul .parent .parent-link {
+  display: inline-block;
   transition: all 0.15s ease-in-out;
 }
-header .main-nav-ul li a.active {
+header .main-nav-ul .parent .parent-link.active {
   border: 3px solid;
   border: 0.1875rem solid;
   border-radius: 200px;
@@ -3531,12 +3546,23 @@ header .main-nav-ul li a.active {
   padding: 5px 10px;
   padding: 0.3125rem 0.625rem;
 }
-header .main-nav-ul li a:hover {
+header .main-nav-ul .parent .parent-link:not(.border-white):hover {
   color: #00283b;
   border-color: #00283b;
 }
-header .main-nav-ul li a:hover svg {
+header .main-nav-ul .parent .parent-link:not(.border-white):hover svg {
   fill: #00283b;
+}
+header .main-nav-ul .parent .parent-link svg {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  right: 0.9375rem;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: -webkit-fit-content;
+  width: fit-content;
+  transition: all 0.15s ease-in-out;
 }
 header .social-nav-ul {
   display: -ms-flexbox;
@@ -3558,6 +3584,40 @@ header .social-nav-ul svg {
 header .dropdown {
   position: absolute;
   top: 100%;
+  left: 50%;
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #FFF9F0;
+  width: 130px;
+  width: 8.125rem;
+  box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.03);
+  box-shadow: 0.625rem 0.625rem 0.625rem 0 rgba(0, 0, 0, 0.03);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.15s ease-in-out;
+}
+header .dropdown a {
+  display: block;
+  width: 100%;
+}
+header .dropdown a:hover {
+  color: #00283b !important;
+}
+header .dropdown a:hover svg {
+  fill: #00283b !important;
+  -ms-transform: translateX(5px) translateY(-50%);
+  transform: translateX(5px) translateY(-50%);
+}
+header .dropdown a svg {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  right: 0.9375rem;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: -webkit-fit-content;
+  width: fit-content;
+  transition: all 0.15s ease-in-out;
 }
 
 .index-body {

@@ -261,10 +261,10 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding:{
-        top: rem(10);
-        bottom: rem(10);
-    }
+    // padding:{
+    //     top: rem(10);
+    //     bottom: rem(10);
+    // }
     z-index: 100;
     .header-inner {
         display: flex;
@@ -285,25 +285,56 @@ header {
         margin:{
             right: rem(30);
         }
-        li {
+        .parent {
+            padding:{
+                top: rem(20);
+                bottom: rem(20);
+            }
             &:not(:last-child) {
                 margin:{
                     right: rem(30);
                 }
             }
-            a {
+            &.has-children {
+                &:hover {
+                    & > .parent-link svg {
+                        transform: translateY(-50%) rotate(90deg);
+                    }
+                    & > .dropdown {
+                        opacity: 1;
+                        pointer-events: all;
+                    }
+                }
+                .parent-link {
+                    padding:{
+                        right: rem(30) !important;
+                    }
+                }
+            }
+            .parent-link {
+                display: inline-block;
                 transition: all 0.15s ease-in-out;
                 &.active {
                     border: rem(3) solid;
                     border-radius: rem(200);
                     padding: rem(5) rem(10);
                 }
-                &:hover {
-                    color: #00283b;
-                    border-color: #00283b;
-                    svg {
-                        fill: #00283b;
+                &:not(.border-white) {
+                    &:hover {
+                        color: #00283b;
+                        border-color: #00283b;
+                        svg {
+                            fill: #00283b;
+                        }
                     }
+                }
+                svg {
+                    position: absolute;
+                    top: 50%;
+                    right: rem(15);
+                    transform: translateY(-50%);
+                    width: fit-content;
+                    transition: all 0.15s ease-in-out;
                 }
             }
         }
@@ -327,6 +358,33 @@ header {
     .dropdown {
         position: absolute;
         top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #FFF9F0;
+        width: rem(130);
+        box-shadow: rem(10) rem(10) rem(10) 0 rgba(0,0,0,0.03);
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.15s ease-in-out;
+        a {
+            display: block;
+            width: 100%;
+            &:hover {
+                color: #00283b !important;
+                svg {
+                    fill: #00283b !important;
+                    transform: translateX(5px) translateY(-50%);
+                }
+            }
+            svg {
+                position: absolute;
+                top: 50%;
+                right: rem(15);
+                transform: translateY(-50%);
+                width: fit-content;
+                transition: all 0.15s ease-in-out;
+            }
+        }
     }
 }
 
