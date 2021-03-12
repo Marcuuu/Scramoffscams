@@ -3560,8 +3560,10 @@ header .main-nav-ul .parent .parent-link svg {
   right: 0.9375rem;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: -webkit-fit-content;
-  width: fit-content;
+  width: 12px;
+  width: 0.75rem;
+  height: 12px;
+  height: 0.75rem;
   transition: all 0.15s ease-in-out;
 }
 header .social-nav-ul {
@@ -3615,8 +3617,10 @@ header .dropdown a svg {
   right: 0.9375rem;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  width: -webkit-fit-content;
-  width: fit-content;
+  width: 12px;
+  width: 0.75rem;
+  height: 12px;
+  height: 0.75rem;
   transition: all 0.15s ease-in-out;
 }
 

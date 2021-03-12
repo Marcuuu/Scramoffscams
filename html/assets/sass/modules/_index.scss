@@ -333,7 +333,8 @@ header {
                     top: 50%;
                     right: rem(15);
                     transform: translateY(-50%);
-                    width: fit-content;
+                    width: rem(12);
+                    height: rem(12);
                     transition: all 0.15s ease-in-out;
                 }
             }
@@ -381,7 +382,8 @@ header {
                 top: 50%;
                 right: rem(15);
                 transform: translateY(-50%);
-                width: fit-content;
+                width: rem(12);
+                height: rem(12);
                 transition: all 0.15s ease-in-out;
             }
         }
