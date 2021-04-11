@@ -3556,8 +3556,8 @@ header .main-nav-ul .parent .parent-link:not(.border-white):hover svg {
 header .main-nav-ul .parent .parent-link svg {
   position: absolute;
   top: 50%;
-  right: 15px;
-  right: 0.9375rem;
+  right: 10px;
+  right: 0.625rem;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   width: 12px;
